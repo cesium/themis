@@ -26,9 +26,9 @@ import waylonHydenImage from '@/images/avatars/waylon-hyden.jpg'
 
 const days = [
   {
-    name: 'Opening Day',
-    date: 'April 4',
-    dateTime: '2022-04-04',
+    name: 'Dia de Abertura',
+    date: '30 de Março',
+    dateTime: '2022-03-30',
     speakers: [
       {
         name: 'Steven McHail',
@@ -63,9 +63,9 @@ const days = [
     ],
   },
   {
-    name: 'Speakers & Workshops',
-    date: 'April 5',
-    dateTime: '2022-04-05',
+    name: 'Blockchain e Smart Contracts',
+    date: '31 de Março',
+    dateTime: '2022-03-31',
     speakers: [
       {
         name: 'Damaris Kimura',
@@ -96,43 +96,6 @@ const days = [
         name: 'Giordano Sagucio',
         role: 'Game Developer at Soylent Corp',
         image: giordanoSagucioImage,
-      },
-    ],
-  },
-  {
-    name: 'Interviews',
-    date: 'April 6',
-    dateTime: '2022-04-06',
-    speakers: [
-      {
-        name: 'Andrew Greene',
-        role: 'Frontend Developer at Ultratech',
-        image: andrewGreeneImage,
-      },
-      {
-        name: 'Heather Terry',
-        role: 'Backend Developer at Xanatos Enterprises',
-        image: heatherTerryImage,
-      },
-      {
-        name: 'Piers Wilkins',
-        role: 'Full stack Developer at BiffCo',
-        image: piersWilkinsImage,
-      },
-      {
-        name: 'Gordon Sanderson',
-        role: 'Mobile Developer at Cobra Industries',
-        image: gordonSandersonImage,
-      },
-      {
-        name: 'Kimberly Parsons',
-        role: 'Game Developer at Tyrell Corporation',
-        image: kimberlyParsonsImage,
-      },
-      {
-        name: 'Richard Astley',
-        role: 'CEO at Roll Out',
-        image: richardAstley,
       },
     ],
   },
@@ -188,11 +151,10 @@ export function Speakers() {
             id="speakers-title"
             className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
           >
-            Speakers
+            Oradores
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            Learn from the experts on the cutting-edge of deception at the most
-            sinister companies.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui assumenda provident ratione delectus?
           </p>
         </div>
         <Tab.Group
