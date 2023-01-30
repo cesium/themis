@@ -5,8 +5,8 @@ import logoCesium from '@/images/organization/CeSIUM-icon.svg'
 import logoELSA from '@/images/organization/ELSA.png'
 
 const organizers = [
-  { name: 'CeSIUM', logo: logoCesium },
-  { name: 'ELSA', logo: logoELSA },
+  { name: 'CeSIUM', logo: logoCesium , site: 'https://cesium.di.uminho.pt/'},
+  { name: 'ELSA', logo: logoELSA , site: '/'},
 ]
 
 export function Organization() {
@@ -19,7 +19,7 @@ export function Organization() {
         <div className=" flex flex-row items-center gap-16 mx-auto">
           {organizers.map((organization) => (
             <div key={organization.name}>
-              <Image className="" src={organization.logo} alt={organization.name} height={80} unoptimized />
+              <a href={organization.site}><Image className="hover:opacity-80" src={organization.logo} alt={organization.name} height={80} unoptimized /></a>
             </div>
           ))}
         </div>
