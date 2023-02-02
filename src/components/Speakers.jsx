@@ -63,7 +63,7 @@ const days = [
     ],
   },
   {
-    name: 'Blockchain e Smart Contracts',
+    name: 'Blockchain',
     date: '31 de Março',
     dateTime: '2022-03-31',
     speakers: [
@@ -179,7 +179,7 @@ export function Speakers() {
                     <div className="relative">
                       <div
                         className={clsx(
-                          'font-mono text-sm',
+                          'font-mono text-sm hidden sm:flex',
                           dayIndex === selectedIndex
                             ? 'text-blue-600'
                             : 'text-slate-500'
@@ -192,7 +192,7 @@ export function Speakers() {
                       </div>
                       <time
                         dateTime={day.dateTime}
-                        className="mt-1.5 block text-2xl font-semibold tracking-tight text-blue-900"
+                        className="mt-1.5 block text-2xl font-semibold tracking-tight text-blue-900 ml-5 sm:ml-0"
                       >
                         {day.date}
                       </time>
