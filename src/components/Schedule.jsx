@@ -130,16 +130,16 @@ function ScheduleTabbed() {
   return (
     <Tab.Group
       as="div"
-      className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden"
+      className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 lg:grid-cols-2 lg:hidden"
       vertical={tabOrientation === 'vertical'}
     >
-      <Tab.List className=" flex justify-between gap-x-4 gap-y-10 overflow-x-auto pb-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
+      <Tab.List className=" flex justify-between gap-x-4 gap-y-10 overflow-x-auto pb-4 sm:mx-0 lg:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
         {({ selectedIndex }) =>
           schedule.map((day, dayIndex) => (
             <div
               key={day.dateTime}
               className={clsx(
-                'relative w-[40%] ml-4 flex-none pr-4 sm:w-auto sm:pr-0',
+                'relative w-[40%] ml-4 flex-none pr-4 lg:w-auto lg:pr-0',
                 dayIndex !== selectedIndex && 'opacity-70'
               )}
             >
@@ -178,7 +178,7 @@ function DaySummary({ day }) {
       <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-blue-900">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="hidden mt-1.5 text-sm sm:flex sm:text-base tracking-tight text-blue-900">
+      <p className="hidden mt-1.5 text-sm lg:flex lg:text-base tracking-tight text-blue-900">
         {day.summary}
       </p>
     </>
