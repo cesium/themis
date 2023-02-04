@@ -175,10 +175,10 @@ function ScheduleTabbed() {
 function DaySummary({ day }) {
   return (
     <>
-      <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-blue-900">
+      <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-secondary">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="hidden mt-1.5 text-sm lg:flex lg:text-base tracking-tight text-blue-900">
+      <p className="hidden mt-1.5 text-sm lg:flex lg:text-base tracking-tight text-secondary">
         {day.summary}
       </p>
     </>
@@ -191,7 +191,7 @@ function TimeSlots({ day, className }) {
       role="list"
       className={clsx(
         className,
-        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur'
+        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-secondary/5 backdrop-blur'
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
@@ -202,11 +202,11 @@ function TimeSlots({ day, className }) {
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-blue-900">
+          <h4 className="text-lg font-semibold tracking-tight text-secondary">
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-blue-900">
+            <p className="mt-1 tracking-tight text-secondary">
               {timeSlot.description}
             </p>
           )}
@@ -244,10 +244,10 @@ export function Schedule() {
     <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
+          <h2 className="font-display text-4xl font-medium tracking-tighter text-primary sm:text-5xl">
             Horário
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+          <p className="mt-4 font-display text-2xl tracking-tight text-secondary">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolorum molestiae, esse corporis illum ab reiciendis consequuntur atque, tempora numquam, enim voluptatibus qui culpa fuga dolore blanditiis praesentium ex nesciunt?
           </p>
         </div>
