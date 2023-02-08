@@ -154,7 +154,7 @@ export function Speakers() {
             Oradores
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-secondary">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui assumenda provident ratione delectus?
+          Learn from the experts on the cutting-edge of deception at the most sinister companies.
           </p>
         </div>
         <Tab.Group

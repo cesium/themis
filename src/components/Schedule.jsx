@@ -248,7 +248,7 @@ export function Schedule() {
             Horário
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-secondary">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolorum molestiae, esse corporis illum ab reiciendis consequuntur atque, tempora numquam, enim voluptatibus qui culpa fuga dolore blanditiis praesentium ex nesciunt?
+          The worst people in our industry giving the best talks you’ve ever
           </p>
         </div>
       </Container>
