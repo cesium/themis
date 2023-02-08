@@ -27,8 +27,8 @@ import waylonHydenImage from '@/images/avatars/waylon-hyden.jpg'
 const days = [
   {
     name: 'Dia de Abertura',
-    date: '30 de Março',
-    dateTime: '2022-03-30',
+    date: 'April 4',
+    dateTime: '2022-04-04',
     speakers: [
       {
         name: 'Steven McHail',
@@ -64,8 +64,8 @@ const days = [
   },
   {
     name: 'Blockchain',
-    date: '31 de Março',
-    dateTime: '2022-03-31',
+    date: 'April 5',
+    dateTime: '2022-04-05',
     speakers: [
       {
         name: 'Damaris Kimura',

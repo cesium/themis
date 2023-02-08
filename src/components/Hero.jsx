@@ -27,10 +27,14 @@ export function Hero() {
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-secondary">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit dicta et sint itaque ut ducimus eaque nisi rem at eum hic minima deserunt cupiditate, quo vel numquam. Nobis, rerum consequuntur!
+              They know how to use dev tools, they can detect a phishing scam
+              from a mile away, and they certainly aren’t accepting any checks
+              from Western Union.
             </p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit consectetur aliquam pariatur ullam aperiam natus cum, dignissimos, unde consequatur sequi illum et ducimus rem! Ullam et tempore molestiae quod sit.
+              At DeceptiConf you’ll learn about the latest dark patterns being
+              developed to trick even the smartest visitors, and you’ll learn
+              how to deploy them without ever being detected.
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">

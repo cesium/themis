@@ -8,10 +8,10 @@ import backgroundImage from '@/images/background.jpg'
 
 const schedule = [
   {
-    date: '30 de Março',
-    dateTime: '2022-03-30',
+    date: 'April 4',
+    dateTime: '2022-04-04',
     summary:
-      ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolorum molestiae?',
+      'The first day of the conference is focused on dark patterns for ecommerce.',
     timeSlots: [
       {
         name: 'Steven McHail',
@@ -58,10 +58,10 @@ const schedule = [
     ],
   },
   {
-    date: '31 de Março',
-    dateTime: '2022-03-31',
+    date: 'April 5',
+    dateTime: '2022-04-05',
     summary:
-      ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolorum molestiae?',
+      'Next we spend the day talking about deceiving people with technology.',
     timeSlots: [
       {
         name: 'Damaris Kimura',
