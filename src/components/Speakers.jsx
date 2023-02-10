@@ -26,7 +26,7 @@ import waylonHydenImage from '@/images/avatars/waylon-hyden.jpg'
 
 const days = [
   {
-    name: 'Opening Day',
+    name: 'Dia de Abertura',
     date: 'April 4',
     dateTime: '2022-04-04',
     speakers: [
@@ -63,7 +63,7 @@ const days = [
     ],
   },
   {
-    name: 'Speakers & Workshops',
+    name: 'Blockchain',
     date: 'April 5',
     dateTime: '2022-04-05',
     speakers: [
@@ -96,43 +96,6 @@ const days = [
         name: 'Giordano Sagucio',
         role: 'Game Developer at Soylent Corp',
         image: giordanoSagucioImage,
-      },
-    ],
-  },
-  {
-    name: 'Interviews',
-    date: 'April 6',
-    dateTime: '2022-04-06',
-    speakers: [
-      {
-        name: 'Andrew Greene',
-        role: 'Frontend Developer at Ultratech',
-        image: andrewGreeneImage,
-      },
-      {
-        name: 'Heather Terry',
-        role: 'Backend Developer at Xanatos Enterprises',
-        image: heatherTerryImage,
-      },
-      {
-        name: 'Piers Wilkins',
-        role: 'Full stack Developer at BiffCo',
-        image: piersWilkinsImage,
-      },
-      {
-        name: 'Gordon Sanderson',
-        role: 'Mobile Developer at Cobra Industries',
-        image: gordonSandersonImage,
-      },
-      {
-        name: 'Kimberly Parsons',
-        role: 'Game Developer at Tyrell Corporation',
-        image: kimberlyParsonsImage,
-      },
-      {
-        name: 'Richard Astley',
-        role: 'CEO at Roll Out',
-        image: richardAstley,
       },
     ],
   },
@@ -186,13 +149,12 @@ export function Speakers() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="speakers-title"
-            className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
+            className="font-display text-4xl font-medium tracking-tighter text-primary sm:text-5xl"
           >
-            Speakers
+            Oradores
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            Learn from the experts on the cutting-edge of deception at the most
-            sinister companies.
+          <p className="mt-4 font-display text-2xl tracking-tight text-secondary">
+          Learn from the experts on the cutting-edge of deception at the most sinister companies.
           </p>
         </div>
         <Tab.Group
@@ -210,16 +172,16 @@ export function Speakers() {
                       className={clsx(
                         'absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                         dayIndex === selectedIndex
-                          ? 'fill-blue-600 stroke-blue-600'
+                          ? 'fill-primary stroke-primary'
                           : 'fill-transparent stroke-slate-400'
                       )}
                     />
                     <div className="relative">
                       <div
                         className={clsx(
-                          'font-mono text-sm',
+                          'font-mono text-sm hidden sm:flex',
                           dayIndex === selectedIndex
-                            ? 'text-blue-600'
+                            ? 'text-primary'
                             : 'text-slate-500'
                         )}
                       >
@@ -230,7 +192,7 @@ export function Speakers() {
                       </div>
                       <time
                         dateTime={day.dateTime}
-                        className="mt-1.5 block text-2xl font-semibold tracking-tight text-blue-900"
+                        className="mt-1.5 block text-2xl font-semibold tracking-tight text-secondary ml-5 sm:ml-0"
                       >
                         {day.date}
                       </time>
@@ -254,9 +216,9 @@ export function Speakers() {
                         className={clsx(
                           'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
                           [
-                            'border-blue-300',
-                            'border-indigo-300',
-                            'border-sky-300',
+                            'border-primary',
+                            'border-secondary',
+                            'border-primary',
                           ][speakerIndex % 3]
                         )}
                       />

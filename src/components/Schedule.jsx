@@ -107,56 +107,6 @@ const schedule = [
       },
     ],
   },
-  {
-    date: 'April 6',
-    dateTime: '2022-04-06',
-    summary:
-      'We close out the event previewing new techniques that are still in development.',
-    timeSlots: [
-      {
-        name: 'Andrew Greene',
-        description: 'Neuralink dark patterns',
-        start: '9:00AM',
-        end: '10:00AM',
-      },
-      {
-        name: 'Heather Terry',
-        description: 'DALL-E for passports',
-        start: '10:00AM',
-        end: '11:00AM',
-      },
-      {
-        name: 'Piers Wilkins',
-        description: 'Quantum password cracking',
-        start: '11:00AM',
-        end: '12:00PM',
-      },
-      {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Gordon Sanderson',
-        description: 'SkyNet is coming',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Kimberly Parsons',
-        description: 'Dark patterns for the metaverse',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Richard Astley',
-        description: 'Knowing the game and playing it',
-        start: '3:00PM',
-        end: '4:00PM',
-      },
-    ],
-  },
 ]
 
 function ScheduleTabbed() {
@@ -180,16 +130,16 @@ function ScheduleTabbed() {
   return (
     <Tab.Group
       as="div"
-      className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden"
+      className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 lg:grid-cols-2 lg:hidden"
       vertical={tabOrientation === 'vertical'}
     >
-      <Tab.List className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pl-4 pb-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
+      <Tab.List className=" flex justify-between gap-x-4 gap-y-10 overflow-x-auto pb-4 sm:mx-0 lg:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
         {({ selectedIndex }) =>
           schedule.map((day, dayIndex) => (
             <div
               key={day.dateTime}
               className={clsx(
-                'relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0',
+                'relative w-[40%] ml-4 flex-none pr-4 lg:w-auto lg:pr-0',
                 dayIndex !== selectedIndex && 'opacity-70'
               )}
             >
@@ -225,10 +175,10 @@ function ScheduleTabbed() {
 function DaySummary({ day }) {
   return (
     <>
-      <h3 className="text-2xl font-semibold tracking-tight text-blue-900">
+      <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-secondary">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="mt-1.5 text-base tracking-tight text-blue-900">
+      <p className="hidden mt-1.5 text-sm lg:flex lg:text-base tracking-tight text-secondary">
         {day.summary}
       </p>
     </>
@@ -241,7 +191,7 @@ function TimeSlots({ day, className }) {
       role="list"
       className={clsx(
         className,
-        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur'
+        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-secondary/5 backdrop-blur'
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
@@ -252,11 +202,11 @@ function TimeSlots({ day, className }) {
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-blue-900">
+          <h4 className="text-lg font-semibold tracking-tight text-secondary">
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-blue-900">
+            <p className="mt-1 tracking-tight text-secondary">
               {timeSlot.description}
             </p>
           )}
@@ -278,7 +228,7 @@ function TimeSlots({ day, className }) {
 
 function ScheduleStatic() {
   return (
-    <div className="hidden lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-64">
       {schedule.map((day) => (
         <section key={day.dateTime}>
           <DaySummary day={day} />
@@ -294,14 +244,11 @@ export function Schedule() {
     <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-            Our three day schedule is jam-packed with brilliant, creative, evil
-            geniuses.
+          <h2 className="font-display text-4xl font-medium tracking-tighter text-primary sm:text-5xl">
+            Horário
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            The worst people in our industry giving the best talks you’ve ever
-            seen. Nothing will be recorded and every attendee has to sign an NDA
-            to watch the talks.
+          <p className="mt-4 font-display text-2xl tracking-tight text-secondary">
+          The worst people in our industry giving the best talks you’ve ever
           </p>
         </div>
       </Container>

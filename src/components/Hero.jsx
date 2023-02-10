@@ -22,13 +22,11 @@ export function Hero() {
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-          <h1 className="font-display text-5xl font-bold tracking-tighter text-blue-600 sm:text-7xl">
-            <span className="sr-only">DeceptiConf - </span>A design conference
-            for the dark side.
+          <h1 className="font-display text-5xl font-bold tracking-tighter text-primary sm:text-7xl">
+            <span className="sr-only">Jordi </span>Jornadas de Direito Informático
           </h1>
-          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-blue-900">
+          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-secondary">
             <p>
-              The next generation of web users are tech-savvy and suspicious.
               They know how to use dev tools, they can detect a phishing scam
               from a mile away, and they certainly aren’t accepting any checks
               from Western Union.
@@ -40,18 +38,17 @@ export function Hero() {
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">
-            Get your tickets
+            Inscreve-te
           </Button>
           <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
-              ['Speakers', '18'],
-              ['People Attending', '2,091'],
-              ['Venue', 'Staples Center'],
-              ['Location', 'Los Angeles'],
+              ['Speakers', '6'],
+              ['Venue', 'Campus de Gualtar, Universidade do Minho'],
+              ['Local', 'Braga'],
             ].map(([name, value]) => (
               <div key={name}>
-                <dt className="font-mono text-sm text-blue-600">{name}</dt>
-                <dd className="mt-0.5 text-2xl font-semibold tracking-tight text-blue-900">
+                <dt className="font-mono text-sm text-primary">{name}</dt>
+                <dd className="mt-0.5 text-base sm:text-2xl font-semibold tracking-tight text-secondary">
                   {value}
                 </dd>
               </div>
