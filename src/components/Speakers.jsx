@@ -5,95 +5,8 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
-import cathleneBurrageImage from 'public/images/avatars/cathlene-burrage.jpg'
-import damarisKimuraImage from 'public/images/avatars/damaris-kimura.jpg'
-import dianneGuilianelliImage from 'public/images/avatars/dianne-guilianelli.jpg'
-import erhartCockrinImage from 'public/images/avatars/erhart-cockrin.jpg'
-import giordanoSagucioImage from 'public/images/avatars/giordano-sagucio.jpg'
-import ibrahimFraschImage from 'public/images/avatars/ibrahim-frasch.jpg'
-import jaquelinIschImage from 'public/images/avatars/jaquelin-isch.jpg'
-import parkerJohnsonImage from 'public/images/avatars/parker-johnson.jpg'
-import rinaldoBeynonImage from 'public/images/avatars/rinaldo-beynon.jpg'
-import ronniCantadoreImage from 'public/images/avatars/ronni-cantadore.jpg'
-import stevenMchailImage from 'public/images/avatars/steven-mchail.jpg'
-import waylonHydenImage from 'public/images/avatars/waylon-hyden.jpg'
 
-const days = [
-  {
-    name: 'Dia de Abertura',
-    date: 'April 4',
-    dateTime: '2022-04-04',
-    speakers: [
-      {
-        name: 'Steven McHail',
-        role: 'Designer at Globex Corporation',
-        image: stevenMchailImage,
-      },
-      {
-        name: 'Jaquelin Isch',
-        role: 'UX Design at InGen',
-        image: jaquelinIschImage,
-      },
-      {
-        name: 'Dianne Guilianelli',
-        role: 'General Manager at Initech',
-        image: dianneGuilianelliImage,
-      },
-      {
-        name: 'Ronni Cantadore',
-        role: 'Design Engineer at Weyland-Yutani',
-        image: ronniCantadoreImage,
-      },
-      {
-        name: 'Erhart Cockrin',
-        role: 'Product Lead at Cyberdyne Systems',
-        image: erhartCockrinImage,
-      },
-      {
-        name: 'Parker Johnson',
-        role: 'UI Designer at MomCorp',
-        image: parkerJohnsonImage,
-      },
-    ],
-  },
-  {
-    name: 'Blockchain',
-    date: 'April 5',
-    dateTime: '2022-04-05',
-    speakers: [
-      {
-        name: 'Damaris Kimura',
-        role: 'Senior Engineer at OCP',
-        image: damarisKimuraImage,
-      },
-      {
-        name: 'Ibrahim Frasch',
-        role: 'Programmer at Umbrella Corp',
-        image: ibrahimFraschImage,
-      },
-      {
-        name: 'Cathlene Burrage',
-        role: 'Frontend Developer at Buy n Large',
-        image: cathleneBurrageImage,
-      },
-      {
-        name: 'Rinaldo Beynon',
-        role: 'Data Scientist at Rekall',
-        image: rinaldoBeynonImage,
-      },
-      {
-        name: 'Waylon Hyden',
-        role: 'DevOps at RDA Corporation',
-        image: waylonHydenImage,
-      },
-      {
-        name: 'Giordano Sagucio',
-        role: 'Game Developer at Soylent Corp',
-        image: giordanoSagucioImage,
-      },
-    ],
-  },
-]
+import days from '@/data/speakers.json'
 
 function ImageClipPaths({ id, ...props }) {
   return (
@@ -222,10 +135,12 @@ export function Speakers() {
                       >
                         <Image
                           className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
-                          src={speaker.image}
+                          src={`/images/avatars/${speaker.image}`}
                           alt=""
                           priority
                           sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                          width={560}
+                          height={560}
                         />
                       </div>
                     </div>
