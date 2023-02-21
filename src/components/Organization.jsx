@@ -1,8 +1,9 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import logoCesium from '@/images/organization/CeSIUM-icon.svg'
-import logoELSA from '@/images/organization/ELSA.png'
+import logoCesium from 'public/images/organization/CeSIUM-icon.svg'
+import logoELSA from 'public/images/organization/ELSA.png'
+
 
 const organizers = [
   { name: 'CeSIUM', logo: logoCesium , site: 'https://cesium.di.uminho.pt/'},

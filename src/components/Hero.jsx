@@ -2,7 +2,8 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background.jpg'
+import backgroundImage from 'public/images/background.jpg'
+import hero from '@/data/hero.json'
 
 export function Hero() {
   return (
@@ -41,11 +42,7 @@ export function Hero() {
             Inscreve-te
           </Button>
           <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
-            {[
-              ['Speakers', '6'],
-              ['Venue', 'Campus de Gualtar, Universidade do Minho'],
-              ['Local', 'Braga'],
-            ].map(([name, value]) => (
+            {hero.map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-primary">{name}</dt>
                 <dd className="mt-0.5 text-base sm:text-2xl font-semibold tracking-tight text-secondary">
