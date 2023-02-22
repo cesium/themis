@@ -1,14 +1,8 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import logoCesium from 'public/images/organization/CeSIUM-icon.svg'
-import logoELSA from 'public/images/organization/ELSA.png'
+import organizers from '@/data/organization.json'
 
-
-const organizers = [
-  { name: 'CeSIUM', logo: logoCesium , site: 'https://cesium.di.uminho.pt/'},
-  { name: 'ELSA', logo: logoELSA , site: '/'},
-]
 
 export function Organization() {
   return (
@@ -20,7 +14,7 @@ export function Organization() {
         <div className=" flex flex-row items-center gap-16 mx-auto">
           {organizers.map((organization) => (
             <div key={organization.name}>
-              <a href={organization.site}><Image className="hover:opacity-80" src={organization.logo} alt={organization.name} height={80} /></a>
+              <a href={organization.site}><Image className="hover:opacity-80" src={`/images/organization/${organization.logo}`} alt={organization.name} height={80} width={85}/></a>
             </div>
           ))}
         </div>
