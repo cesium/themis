@@ -21,7 +21,7 @@ function ArrowRightIcon(props) {
 
 export function Papers() {
   return (
-    <section id="newsletter" aria-label="Newsletter">
+    <section id="papers" aria-label="Papers">
       <Container>
         <div className="relative -mx-4 overflow-hidden bg-indigo-50 py-20 px-4 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           <Image
