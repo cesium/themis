@@ -1,15 +1,7 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
-
-const sponsors = [
-  { name: 'Transistor', logo: logoTransistor },
-  { name: 'Tuple', logo: logoTuple },
-  { name: 'StaticKit', logo: logoStaticKit },
-]
+import sponsors from '@/data/sponsors.json'
 
 export function Sponsors() {
   return (
@@ -24,7 +16,7 @@ export function Sponsors() {
               key={sponsor.name}
               className="flex items-center justify-center"
             >
-              <Image src={sponsor.logo} alt={sponsor.name} unoptimized />
+              <Image src={`/images/logos/${sponsor.logo}`} alt={sponsor.name} height={70} width={120}/>
             </div>
           ))}
         </div>
