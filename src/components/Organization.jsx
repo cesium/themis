@@ -14,7 +14,8 @@ export function Organization() {
         <div className=" flex flex-row items-center gap-16 mx-auto">
           {organizers.map((organization) => (
             <div key={organization.name}>
-              <a href={organization.site}><Image className="hover:opacity-80" src={`/images/organization/${organization.logo}`} alt={organization.name} height={80} width={85}/></a>
+              <a href={organization.site}><Image className="hover:opacity-80" src={`/images/organization/${organization.logo}`} alt={organization.name} height={80} 
+                                                 width={`${organization.name == "ELSA" ? 120 : 75}`}/></a>
             </div>
           ))}
         </div>
