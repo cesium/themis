@@ -1,7 +1,7 @@
 [
     {
-      "date": "April 4",
-      "dateTime": "2022-04-04",
+      "date": "Abril 17",
+      "dateTime": "2023-04-17",
       "summary": "The first day of the conference is focused on dark patterns for ecommerce.",
       "timeSlots": [
         {
@@ -49,8 +49,57 @@
       ]
     },
     {
-      "date": "April 5",
-      "dateTime": "2022-04-05",
+      "date": "Abril 18",
+      "dateTime": "2023-04-18",
+      "summary": "Next we spend the day talking about deceiving people with technology.",
+      "timeSlots": [
+        {
+          "name": "Damaris Kimura",
+          "description": "The invisible card reader",
+          "start": "9:00AM",
+          "end": "10:00AM"
+        },
+        {
+          "name": "Ibrahim Frasch",
+          "description": "Stealing fingerprints",
+          "start": "10:00AM",
+          "end": "11:00AM"
+        },
+        {
+          "name": "Cathlene Burrage",
+          "description": "Voting machines",
+          "start": "11:00AM",
+          "end": "12:00PM"
+        },
+        {
+          "name": "Lunch",
+          "description": null,
+          "start": "12:00PM",
+          "end": "1:00PM"
+        },
+        {
+          "name": "Rinaldo Beynon",
+          "description": "Blackhat SEO that works",
+          "start": "1:00PM",
+          "end": "2:00PM"
+        },
+        {
+          "name": "Waylon Hyden",
+          "description": "Turning your audience into a botnet",
+          "start": "2:00PM",
+          "end": "3:00PM"
+        },
+        {
+          "name": "Giordano Sagucio",
+          "description": "Fly phishing",
+          "start": "3:00PM",
+          "end": "4:00PM"
+        }
+      ]
+    },
+    {
+      "date": "Abril 19",
+      "dateTime": "2023-04-19",
       "summary": "Next we spend the day talking about deceiving people with technology.",
       "timeSlots": [
         {

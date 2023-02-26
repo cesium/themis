@@ -1,8 +1,8 @@
 [
   {
     "name": "Dia de abertura",
-    "date": "April 4",
-    "dateTime": "2022-04-04",
+    "date": "Abril 17",
+    "dateTime": "2023-04-17",
     "speakers": [
       {
         "name": "Steven Mchail",
@@ -38,8 +38,8 @@
   },
   {
     "name": "Blockchain",
-    "date": "April 5",
-    "dateTime": "2022-04-05",
+    "date": "Abril 18",
+    "dateTime": "2023-04-18",
     "speakers": [
       {
         "name": "Damaris Kimura",
@@ -70,6 +70,43 @@
         "name": "Giordano Sagucio",
         "role": "Game Developer at Soylent Corp",
         "image": "giordano-sagucio.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Dia de abertura",
+    "date": "Abril 19",
+    "dateTime": "2023-04-19",
+    "speakers": [
+      {
+        "name": "Steven Mchail",
+        "role": "Designer at Globex Corporation",
+        "image": "steven-mchail.jpg"
+      },
+      {
+        "name": "Jaquelin Isch",
+        "role": "UX Design at InGen",
+        "image": "jaquelin-isch.jpg"
+      },
+      {
+        "name": "Dianne Guilianelli",
+        "role": "General Manager at Initech",
+        "image": "dianne-guilianelli.jpg"
+      },
+      {
+        "name": "Ronni Cantadore",
+        "role": "Design Engineer at Weyland-Yutani",
+        "image": "ronni-cantadore.jpg"
+      },
+      {
+        "name": "Erhart Cockrin",
+        "role": "Product Lead at Cyberdyne Systems",
+        "image": "erhart-cockrin.jpg"
+      },
+      {
+        "name": "Parker Johnson",
+        "role": "UI Designer at MomCorp",
+        "image": "parker-johnson.jpg"
       }
     ]
   }
