@@ -28,14 +28,17 @@ export function Hero() {
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-secondary">
             <p>
-              They know how to use dev tools, they can detect a phishing scam
-              from a mile away, and they certainly aren’t accepting any checks
-              from Western Union.
+              <i>With great technology comes great responsibility!</i>
+            </p>
+              A necessidade de melhores soluções para os crescentes problemas legais 
+              no nosso mundo cada vez mais tecnológico não para de aumentar. 
+              A JORDI - Jornadas do Direito Informático - propõe-se a debater 
+              alguns dos aspetos mais fascinantes desta área cada vez mais importante.
+
             </p>
             <p>
-              At DeceptiConf you’ll learn about the latest dark patterns being
-              developed to trick even the smartest visitors, and you’ll learn
-              how to deploy them without ever being detected.
+            Dos dias 17 a 19 de abril de 2023, poderás explorar os mais diversos temas, 
+            desde blockchain a IA, passando por crimes informáticos e proteção de dados, entre outros.
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">
