@@ -43,9 +43,9 @@ export function Papers() {
             </div>
             <form className='ml-36'>
               <h3 className="text-lg font-semibold tracking-tight text-blue-900">
-                Submete o Paper aqui <span aria-hidden="true">&darr;</span>
+                Submete o Paper aqui <span className="hidden sm:inline-flex" aria-hidden="true">&darr;</span>
               </h3>
-                <Button type="submit" className="ml-24 mt-2" href="/">
+                <Button type="submit" className="ml-20 sm:ml-24 mt-2" href="/">
                   <span className="sr-only sm:not-sr-only">Submissão</span>
                   <span className="sm:hidden">
                     <ArrowRightIcon className="h-6 w-6" />
