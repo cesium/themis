@@ -30,6 +30,7 @@ export function Hero() {
             <p>
               <i>With great technology comes great responsibility!</i>
             </p>
+            <p>
               A necessidade de melhores soluções para os crescentes problemas legais 
               no nosso mundo cada vez mais tecnológico não para de aumentar. 
               A JORDI - Jornadas do Direito Informático - propõe-se a debater 
