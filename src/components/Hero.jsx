@@ -31,15 +31,15 @@ export function Hero() {
               <i>With great technology comes great responsibility!</i>
             </p>
             <p>
-              A necessidade de melhores soluções para os crescentes problemas legais 
-              no nosso mundo cada vez mais tecnológico não para de aumentar. 
+              A necessidade de melhores soluções decorrentes dos crescentes problemas legais 
+              no nosso mundo, cada vez mais tecnológico, não para de aumentar. 
               A JORDI - Jornadas do Direito Informático - propõe-se a debater 
               alguns dos aspetos mais fascinantes desta área cada vez mais importante.
 
             </p>
             <p>
             Dos dias 17 a 19 de abril de 2023, poderás explorar os mais diversos temas, 
-            desde blockchain a IA, passando por crimes informáticos e proteção de dados, entre outros.
+            desde blockchain a IA, passando por crimes informáticos e proteção de dados, opensource, entre outros.
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">
