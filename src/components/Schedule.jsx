@@ -127,7 +127,7 @@ function TimeSlots({ day, className }) {
 
 function ScheduleStatic() {
   return (
-    <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-64">
+    <div className="hidden lg:grid lg:grid-cols-3 lg:gap-x-8">
       {schedule.map((day) => (
         <section key={day.dateTime}>
           <DaySummary day={day} />
