@@ -39,7 +39,7 @@ export function Hero() {
             </p>
             <p>
             Dos dias 17 a 19 de abril de 2023, poderás explorar os mais diversos temas, 
-            desde blockchain a IA, passando por crimes informáticos e proteção de dados, opensource, entre outros.
+            desde blockchain a IA, passando por crimes informáticos e proteção de dados, open-source, entre outros.
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">
