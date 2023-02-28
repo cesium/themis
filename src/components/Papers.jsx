@@ -35,10 +35,10 @@ export function Papers() {
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
               <p className="font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
-                Paper
+                Call for Papers
               </p>
               <p className="mt-4 text-lg tracking-tight text-blue-900">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eveniet voluptatibus corporis reiciendis?
+                Tens interesse em Direito Informático? Gostas de escrever? Habilita-te a ganhar prémios incríveis, inclusive a oportunidade de apresentar o teu paper aos participantes da JORDI!
               </p>
             </div>
             <form className='ml-36'>
