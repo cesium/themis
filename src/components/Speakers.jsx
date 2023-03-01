@@ -1,4 +1,4 @@
-import { useEffect, useId, useState } from 'react'
+import { useEffect, useId, useState, Fragment } from 'react'
 import Image from 'next/image'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
@@ -29,6 +29,18 @@ function ImageClipPaths({ id, ...props }) {
 export function Speakers() {
   let id = useId()
   let [tabOrientation, setTabOrientation] = useState('horizontal')
+  const [selectedDateIndex, setSelectedDateIndex] = useState(0)
+
+  function handleSelectNextDateIndex() {
+    setSelectedDateIndex((prevState) =>
+      prevState < 2 ? prevState + 1 : prevState,
+    )
+  }
+  function handleSelectPrevDateIndex() {
+    setSelectedDateIndex((prevState) =>
+      prevState > 0 ? prevState - 1 : prevState,
+    )
+  }
 
   useEffect(() => {
     let lgMediaQuery = window.matchMedia('(min-width: 1024px)')
@@ -61,35 +73,78 @@ export function Speakers() {
             Oradores
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-secondary">
-          Learn from the experts on the cutting-edge of deception at the most sinister companies.
+            Learn from the experts on the cutting-edge of deception at the most
+            sinister companies.
           </p>
         </div>
         <Tab.Group
           as="div"
           className="mt-14 grid grid-cols-1 items-start gap-y-8 gap-x-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-4"
           vertical={tabOrientation === 'vertical'}
+          selectedIndex={selectedDateIndex}
         >
           <div className="relative -mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:block sm:overflow-visible sm:pb-0">
             <div className="absolute bottom-0 top-2 left-0.5 hidden w-px bg-slate-200 lg:block" />
-            <Tab.List className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
+            {/* MOBILE TABLIST DATE PICKER */}
+            <Tab.List className="flex md:hidden">
+              {days.map((day, dayIndex) => (
+                <Tab key={dayIndex} as="div" className="outline-transparent">
+                  {selectedDateIndex === dayIndex && (
+                    <div className="flex w-screen justify-between px-4">
+                      <button
+                        className="px-4 font-mono text-4xl text-primary"
+                        onClick={handleSelectPrevDateIndex}
+                      >
+                        &lt;
+                      </button>
+
+                      <div className="text-center">
+                        <span className="font-mono text-sm text-primary">
+                          {day.name}
+                        </span>
+                        <time
+                          dateTime={day.dateTime}
+                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-secondary sm:ml-0"
+                        >
+                          {day.date}
+                        </time>
+                      </div>
+
+                      <button
+                        className="px-4 font-mono text-4xl text-primary"
+                        onClick={handleSelectNextDateIndex}
+                      >
+                        &gt;
+                      </button>
+                    </div>
+                  )}
+                </Tab>
+              ))}
+            </Tab.List>
+
+            {/* NORMAL TABLIST DATE PICKER */}
+            <Tab.List className="hidden auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 md:grid lg:grid lg:grid-flow-row lg:grid-cols-1 lg:text-left">
               {({ selectedIndex }) =>
                 days.map((day, dayIndex) => (
-                  <div key={day.dateTime} className="relative lg:pl-8">
+                  <div
+                    key={day.dateTime}
+                    className="relative hidden md:block lg:block lg:pl-8"
+                  >
                     <DiamondIcon
                       className={clsx(
                         'absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                         dayIndex === selectedIndex
                           ? 'fill-primary stroke-primary'
-                          : 'fill-transparent stroke-slate-400'
+                          : 'fill-transparent stroke-slate-400',
                       )}
                     />
                     <div className="relative">
                       <div
                         className={clsx(
-                          'font-mono text-sm hidden sm:flex',
+                          'hidden font-mono text-sm sm:flex',
                           dayIndex === selectedIndex
                             ? 'text-primary'
-                            : 'text-slate-500'
+                            : 'text-slate-500',
                         )}
                       >
                         <Tab className="[&:not(:focus-visible)]:focus:outline-none">
@@ -99,7 +154,7 @@ export function Speakers() {
                       </div>
                       <time
                         dateTime={day.dateTime}
-                        className="mt-1.5 block text-2xl font-semibold tracking-tight text-secondary ml-5 sm:ml-0"
+                        className="mt-1.5 ml-5 block text-2xl font-semibold tracking-tight text-secondary sm:ml-0"
                       >
                         {day.date}
                       </time>
@@ -126,7 +181,7 @@ export function Speakers() {
                             'border-primary',
                             'border-secondary',
                             'border-primary',
-                          ][speakerIndex % 3]
+                          ][speakerIndex % 3],
                         )}
                       />
                       <div
