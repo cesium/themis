@@ -1,5 +1,5 @@
 import { Container } from '@/components/Container'
-import Logo from 'public/images/logoA.svg'
+import Logo from 'public/images/logoA2.svg'
 import Image from 'next/image'
 
 export function Footer() {
