@@ -1,7 +1,7 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
-import Logo from 'public/images/logoA2.svg'
+import Logo from 'public/images/logo.svg'
 import Image from 'next/image'
 
 
