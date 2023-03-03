@@ -36,6 +36,7 @@ export function Speakers() {
       prevState < 2 ? prevState + 1 : prevState,
     )
   }
+
   function handleSelectPrevDateIndex() {
     setSelectedDateIndex((prevState) =>
       prevState > 0 ? prevState - 1 : prevState,

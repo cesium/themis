@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { Tab } from '@headlessui/react';
 import clsx from 'clsx';
@@ -9,30 +9,65 @@ import backgroundImage from 'public/images/background.jpg';
 import schedule from '@/data/schedule.json';
 
 function ScheduleTabbed() {
-  let [tabOrientation, setTabOrientation] = useState('horizontal')
+  const [selectedDateIndex, setSelectedDateIndex] = useState(0)
 
-  useEffect(() => {
-    let smMediaQuery = window.matchMedia('(min-width: 640px)')
+  function handleSelectNextDateIndex() {
+    setSelectedDateIndex((prevState) =>
+      prevState < 2 ? prevState + 1 : prevState,
+    )
+  }
 
-    function onMediaQueryChange({ matches }) {
-      setTabOrientation(matches ? 'vertical' : 'horizontal')
-    }
-
-    onMediaQueryChange(smMediaQuery)
-    smMediaQuery.addEventListener('change', onMediaQueryChange)
-
-    return () => {
-      smMediaQuery.removeEventListener('change', onMediaQueryChange)
-    }
-  }, [])
+  function handleSelectPrevDateIndex() {
+    setSelectedDateIndex((prevState) =>
+      prevState > 0 ? prevState - 1 : prevState,
+    )
+  }
 
   return (
     <Tab.Group
       as="div"
       className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 lg:grid-cols-2 lg:hidden"
-      vertical={tabOrientation === 'vertical'}
+      selectedIndex={selectedDateIndex}
     >
-      <Tab.List className=" flex justify-between gap-x-4 gap-y-10 overflow-x-auto pb-4 sm:mx-0 lg:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
+      {/* MOBILE TABLIST DATE PICKER */}
+      <Tab.List className="flex md:hidden">
+        {schedule.map((day, dayIndex) => (
+          <Tab key={dayIndex} as="div" className="outline-transparent">
+            {selectedDateIndex === dayIndex && (
+              <div className="flex w-screen justify-between px-4 -ml-4">
+                <button
+                  className="px-4 font-mono text-4xl text-primary"
+                  onClick={handleSelectPrevDateIndex}
+                >
+                  &lt;
+                </button>
+
+                <div className="text-center">
+                  <span className="font-mono text-sm text-primary">
+                    {day.name}
+                  </span>
+                  <time
+                    dateTime={day.dateTime}
+                    className="mt-1.5 block text-2xl font-semibold tracking-tight text-secondary sm:ml-0"
+                  >
+                    {day.date}
+                  </time>
+                </div>
+
+                <button
+                  className="px-4 font-mono text-4xl text-primary"
+                  onClick={handleSelectNextDateIndex}
+                >
+                  &gt;
+                </button>
+              </div>
+            )}
+          </Tab>
+        ))}
+      </Tab.List>
+
+      {/* NORMAL TABLIST DATE PICKER */}
+      <Tab.List className="hidden md:flex justify-between gap-x-4 gap-y-10 overflow-x-auto pb-4 lg:flex-col">
         {({ selectedIndex }) =>
           schedule.map((day, dayIndex) => (
             <div
