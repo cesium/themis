@@ -31,10 +31,23 @@ module.exports = {
       maxWidth: {
         '2xl': '40rem',
       },
-      colors:{
-        primary: "#1B69EE",
-        secondary: "#104194",
-      }
+      colors: {
+        primary: '#1B69EE',
+        secondary: '#104194',
+      },
+    },
+    keyframes: {
+      slide: {
+        '0%': { transform: 'translateX(100vw)' },
+        '10%': { transform: 'translateX(60px)' },
+        '50%': { transform: 'translateX(0)' },
+        '90%': { transform: 'translateX(-60px)' },
+        '100%': { transform: 'translateX(-100vw)' },
+      },
+    },
+    animation: {
+      'horizontal-slide': 'slide 3s linear',
+      'horizontal-slide-reverse': 'slide 3s linear reverse',
     },
   },
   plugins: [],
