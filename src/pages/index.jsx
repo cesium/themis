@@ -8,20 +8,24 @@ import { Speakers } from '@/components/Speakers'
 import { Sponsors } from '@/components/Sponsors'
 import { Organization } from '@/components/Organization'
 import { Papers } from '@/components/Papers'
+import { PreLoader } from '@/components/PreLoader'
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Jordi</title>
-        <meta name="description"/>
+        <meta name="description" />
       </Head>
       <Header />
+
+      <PreLoader />
+
       <main>
         <Hero />
         <Speakers />
         <Schedule />
-        <Papers/>
+        <Papers />
         <Sponsors />
         <Organization />
       </main>
