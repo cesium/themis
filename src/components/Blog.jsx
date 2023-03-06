@@ -20,7 +20,7 @@ function ShowPaper({ paper }) {
       <p className="mt-1 tracking-tight text-secondary">{paper.title}</p>
       <p className={`text-base ${open ? 'text-slate-700' : 'hidden'}`}>{paper.text}</p>
       <p className={`text-base ${open ? 'hidden' : 'text-slate-500'}`}>{paper.summary}</p>
-      <Button className="mx-[40%]" onClick={handleToggle}>{open ? 'Mostra menos' : 'Mostra mais'}</Button>
+      <Button className="mx-[40%]" onClick={handleToggle}>{open ? 'Mostrar menos' : 'Mostrar mais'}</Button>
     </div>
   )
 }
