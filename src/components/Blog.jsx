@@ -1,29 +1,8 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import { Button } from '@/components/Button'
 import backgroundImage from 'public/images/background.jpg'
-
-let writers = [
-  {
-    author: "Gerson Júnior",
-    curse: "Engenharia Informática, 3ºano",
-    title: "Engenharia Informática é o melhor curso",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo."
-  },
-  {
-    author: "Sofia Lucas",
-    curse: "Direito, 3ºano",
-    title: "A Elsa é ok",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo."
-  },
-  {
-    author: "Gerson Junior",
-    curse: "Engenharia Informática, 3ºano",
-    title: "Engenharia Informática é o melhor curso",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit alias eaque debitis laboriosam nam voluptatum a asperiores modi nulla expedita eligendi quas suscipit, consequatur ipsum quos enim eum velit illo."
-  },
-]
+import writers from '@/data/blog.json'
 
 function ArrowRightIcon(props) {
   return (
@@ -46,7 +25,7 @@ function PaperStatic() {
       {writers.map((paper) => (
         <ol className="space-y-8 bg-white/60 py-14 px-10 text-start shadow-xl shadow-secondary/5 backdrop-blur rounded-2xl mb-6">
           <div className="text-xl font-semibold tracking-tight text-secondary"> {paper.author} </div>
-          <div className="mt-1 font-mono text-sm text-slate-500"> {paper.curse} </div>
+          <div className="mt-1 font-mono text-sm text-slate-500"> {paper.course} </div>
           <div className="mt-1 tracking-tight text-secondary"> {paper.title} </div>
           <div className="text-base text-slate-500"> {paper.text} </div>
         </ol>
