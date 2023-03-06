@@ -14,7 +14,6 @@ export default function Paper() {
         <Header />
         <main>
           <Blog/>
-          
         </main>
         <Footer />
       </>

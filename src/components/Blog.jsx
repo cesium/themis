@@ -1,19 +1,35 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
+import { Button } from '@/components/Button'
+import React, { useState } from 'react';
 import backgroundImage from 'public/images/background.jpg'
 import writers from '@/data/blog.json'
+
+function ShowPaper({ paper }) {
+  const [open, setOpen] = useState(false);
+
+  const handleToggle = () => {
+    setOpen(!open);
+  }
+
+  return (
+    <div className="space-y-8 bg-white/60 py-14 px-10 text-start shadow-xl shadow-secondary/5 backdrop-blur rounded-2xl mb-6">
+      <p className="text-xl font-semibold tracking-tight text-secondary">{paper.author}</p>
+      <p className="mt-1 font-mono text-sm text-slate-500">{paper.course}</p>
+      <p className="mt-1 tracking-tight text-secondary">{paper.title}</p>
+      <p className={`text-base ${open ? 'text-slate-700' : 'hidden'}`}>{paper.text}</p>
+      <p className={`text-base ${open ? 'hidden' : 'text-slate-500'}`}>{paper.summary}</p>
+      <Button className="mx-[40%]" onClick={handleToggle}>{open ? 'Mostra menos' : 'Mostra mais'}</Button>
+    </div>
+  )
+}
 
 function PaperStatic() {
   return (
     <div className="flex flex-col mt-20 lg:mx-36 rounded-md">
       {writers.map((paper) => (
-        <ol className="space-y-8 bg-white/60 py-14 px-10 text-start shadow-xl shadow-secondary/5 backdrop-blur rounded-2xl mb-6">
-          <div className="text-xl font-semibold tracking-tight text-secondary"> {paper.author} </div>
-          <div className="mt-1 font-mono text-sm text-slate-500"> {paper.course} </div>
-          <div className="mt-1 tracking-tight text-secondary"> {paper.title} </div>
-          <div className="text-base text-slate-500"> {paper.text} </div>
-        </ol>
+        <ShowPaper paper={paper} />
       ))}
     </div>
   )

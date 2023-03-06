@@ -7,7 +7,7 @@ import { Schedule } from '@/components/Schedule'
 import { Speakers } from '@/components/Speakers'
 import { Sponsors } from '@/components/Sponsors'
 import { Organization } from '@/components/Organization'
-import { Papers } from '@/components/Papers'
+import { Papers } from '@/components/Paper'
 
 export default function Home() {
   return (
