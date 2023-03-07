@@ -2,34 +2,42 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import { Button } from '@/components/Button'
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import backgroundImage from 'public/images/background.jpg'
 import writers from '@/data/blog.json'
 
 function ShowPaper({ paper }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   const handleToggle = () => {
-    setOpen(!open);
+    setOpen(!open)
   }
 
   return (
-    <div className="space-y-8 bg-white/60 py-14 px-10 text-start shadow-xl shadow-secondary/5 backdrop-blur rounded-2xl mb-6">
-      <p className="text-xl font-semibold tracking-tight text-secondary">{paper.author}</p>
+    <div className="mb-6 space-y-8 rounded-2xl bg-white/60 py-14 px-10 text-start shadow-xl shadow-secondary/5 backdrop-blur">
+      <p className="text-xl font-semibold tracking-tight text-secondary">
+        {paper.author}
+      </p>
       <p className="mt-1 font-mono text-sm text-slate-500">{paper.course}</p>
       <p className="mt-1 tracking-tight text-secondary">{paper.title}</p>
-      <p className={`text-base ${open ? 'text-slate-700' : 'hidden'}`}>{paper.text}</p>
-      <p className={`text-base ${open ? 'hidden' : 'text-slate-500'}`}>{paper.summary}</p>
-      <Button className="mx-[40%]" onClick={handleToggle}>{open ? 'Mostrar menos' : 'Mostrar mais'}</Button>
+      <p className={`text-base ${open ? 'text-slate-700' : 'hidden'}`}>
+        {paper.text}
+      </p>
+      <p className={`text-base ${open ? 'hidden' : 'text-slate-500'}`}>
+        {paper.summary}
+      </p>
+      <Button className="mx-[40%]" onClick={handleToggle}>
+        {open ? 'Mostrar menos' : 'Mostrar mais'}
+      </Button>
     </div>
   )
 }
 
 function PaperStatic() {
   return (
-    <div className="flex flex-col mt-20 lg:mx-36 rounded-md">
+    <div className="mt-20 flex flex-col rounded-md lg:mx-36">
       {writers.map((paper) => (
-        <ShowPaper paper={paper} />
+        <ShowPaper paper={paper} key={paper.id} />
       ))}
     </div>
   )
@@ -58,12 +66,15 @@ export function Blog() {
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-secondary">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dicta odio temporibus sequi non, ducimus rerum dolor maiores, error tempore dolorem explicabo quas aperiam accusamus dolores aliquam iusto. Ratione, exercitationem.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam dicta odio temporibus sequi non, ducimus rerum dolor
+              maiores, error tempore dolorem explicabo quas aperiam accusamus
+              dolores aliquam iusto. Ratione, exercitationem.
             </p>
           </div>
         </div>
         <Container className="relative">
-          <PaperStatic/>
+          <PaperStatic />
         </Container>
       </Container>
     </div>

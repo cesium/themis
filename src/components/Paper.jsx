@@ -38,19 +38,24 @@ export function Papers() {
                 Call for Papers
               </p>
               <p className="mt-4 text-lg tracking-tight text-blue-900">
-                Tens interesse em Direito Informático? Gostas de escrever? Habilita-te a ganhar prémios incríveis, inclusive a oportunidade de apresentar o teu paper aos participantes da JORDI!
+                Tens interesse em Direito Informático? Gostas de escrever?
+                Habilita-te a ganhar prémios incríveis, inclusive a oportunidade
+                de apresentar o teu paper aos participantes da JORDI!
               </p>
             </div>
-            <form className='ml-36'>
+            <form className="ml-36">
               <h3 className="text-lg font-semibold tracking-tight text-blue-900">
-                Submete o Paper aqui <span className="hidden sm:inline-flex" aria-hidden="true">&darr;</span>
+                Submete o Paper aqui{' '}
+                <span className="hidden sm:inline-flex" aria-hidden="true">
+                  &darr;
+                </span>
               </h3>
-                <Button type="submit" className="ml-20 sm:ml-24 mt-2" href="/">
-                  <span className="sr-only sm:not-sr-only">Submissão</span>
-                  <span className="sm:hidden">
-                    <ArrowRightIcon className="h-6 w-6" />
-                  </span>
-                </Button>
+              <Button type="submit" className="ml-20 mt-2 sm:ml-24" href="/">
+                <span className="sr-only sm:not-sr-only">Submissão</span>
+                <span className="sm:hidden">
+                  <ArrowRightIcon className="h-6 w-6" />
+                </span>
+              </Button>
             </form>
           </div>
         </div>

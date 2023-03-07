@@ -24,22 +24,24 @@ export function Hero() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-5xl font-bold tracking-tighter text-primary sm:text-7xl">
-            <span className="sr-only">Jordi </span>Jornadas de Direito Informático
+            <span className="sr-only">Jordi </span>Jornadas de Direito
+            Informático
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-secondary">
             <p>
               <i>With great technology comes great responsibility!</i>
             </p>
             <p>
-              A necessidade de melhores soluções decorrentes dos crescentes problemas legais 
-              no nosso mundo, cada vez mais tecnológico, não para de aumentar. 
-              A JORDI - Jornadas do Direito Informático - propõe-se a debater 
-              alguns dos aspetos mais fascinantes desta área cada vez mais importante.
-
+              A necessidade de melhores soluções decorrentes dos crescentes
+              problemas legais no nosso mundo, cada vez mais tecnológico, não
+              para de aumentar. A JORDI - Jornadas do Direito Informático -
+              propõe-se a debater alguns dos aspetos mais fascinantes desta área
+              cada vez mais importante.
             </p>
             <p>
-            Dos dias 17 a 19 de abril de 2023, poderás explorar os mais diversos temas, 
-            desde blockchain a IA, passando por crimes informáticos e proteção de dados, open-source, entre outros.
+              Dos dias 17 a 19 de abril de 2023, poderás explorar os mais
+              diversos temas, desde blockchain a IA, passando por crimes
+              informáticos e proteção de dados, open-source, entre outros.
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">
@@ -49,7 +51,7 @@ export function Hero() {
             {hero.map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-primary">{name}</dt>
-                <dd className="mt-0.5 text-base sm:text-2xl font-semibold tracking-tight text-secondary">
+                <dd className="mt-0.5 text-base font-semibold tracking-tight text-secondary sm:text-2xl">
                   {value}
                 </dd>
               </div>
