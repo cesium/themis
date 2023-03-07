@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import Image from 'next/image';
-import { Tab } from '@headlessui/react';
-import clsx from 'clsx';
+import { useState } from 'react'
+import Image from 'next/image'
+import { Tab } from '@headlessui/react'
+import clsx from 'clsx'
 
-import { Container } from '@/components/Container';
-import backgroundImage from 'public/images/background.jpg';
+import { Container } from '@/components/Container'
+import backgroundImage from 'public/images/background.jpg'
 
-import schedule from '@/data/schedule.json';
+import schedule from '@/data/schedule.json'
 
 function ScheduleTabbed() {
   const [selectedDateIndex, setSelectedDateIndex] = useState(0)
@@ -26,7 +26,7 @@ function ScheduleTabbed() {
   return (
     <Tab.Group
       as="div"
-      className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 lg:grid-cols-2 lg:hidden"
+      className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 lg:hidden lg:grid-cols-2"
       selectedIndex={selectedDateIndex}
     >
       {/* MOBILE TABLIST DATE PICKER */}
@@ -34,7 +34,7 @@ function ScheduleTabbed() {
         {schedule.map((day, dayIndex) => (
           <Tab key={dayIndex} as="div" className="outline-transparent">
             {selectedDateIndex === dayIndex && (
-              <div className="flex w-screen justify-between px-4 -ml-4">
+              <div className="-ml-4 flex w-screen justify-between px-4">
                 <button
                   className="px-4 font-mono text-4xl text-primary"
                   onClick={handleSelectPrevDateIndex}
@@ -67,14 +67,14 @@ function ScheduleTabbed() {
       </Tab.List>
 
       {/* NORMAL TABLIST DATE PICKER */}
-      <Tab.List className="hidden md:flex justify-between gap-x-4 gap-y-10 overflow-x-auto pb-4 lg:flex-col">
+      <Tab.List className="hidden justify-between gap-x-4 gap-y-10 overflow-x-auto pb-4 md:flex lg:flex-col">
         {({ selectedIndex }) =>
           schedule.map((day, dayIndex) => (
             <div
               key={day.dateTime}
               className={clsx(
-                'relative w-[40%] ml-4 flex-none pr-4 lg:w-auto lg:pr-0',
-                dayIndex !== selectedIndex && 'opacity-70'
+                'relative ml-4 w-[40%] flex-none pr-4 lg:w-auto lg:pr-0',
+                dayIndex !== selectedIndex && 'opacity-70',
               )}
             >
               <DaySummary
@@ -109,10 +109,10 @@ function ScheduleTabbed() {
 function DaySummary({ day }) {
   return (
     <>
-      <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-secondary">
+      <h3 className="text-xl font-semibold tracking-tight text-secondary sm:text-2xl">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="hidden mt-1.5 text-sm lg:flex lg:text-base tracking-tight text-secondary">
+      <p className="mt-1.5 hidden text-sm tracking-tight text-secondary lg:flex lg:text-base">
         {day.summary}
       </p>
     </>
@@ -125,7 +125,7 @@ function TimeSlots({ day, className }) {
       role="list"
       className={clsx(
         className,
-        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-secondary/5 backdrop-blur'
+        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-secondary/5 backdrop-blur',
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
@@ -182,7 +182,7 @@ export function Schedule() {
             Horário
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-secondary">
-          The worst people in our industry giving the best talks you’ve ever
+            The worst people in our industry giving the best talks you’ve ever
           </p>
         </div>
       </Container>

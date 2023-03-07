@@ -14,14 +14,14 @@ export default function Home() {
     <>
       <Head>
         <title>Jordi</title>
-        <meta name="description"/>
+        <meta name="description" />
       </Head>
       <Header />
       <main>
         <Hero />
         <Speakers />
         <Schedule />
-        <Papers/>
+        <Papers />
         <Sponsors />
         <Organization />
       </main>

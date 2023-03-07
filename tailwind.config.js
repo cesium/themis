@@ -31,10 +31,10 @@ module.exports = {
       maxWidth: {
         '2xl': '40rem',
       },
-      colors:{
-        primary: "#1B69EE",
-        secondary: "#104194",
-      }
+      colors: {
+        primary: '#1B69EE',
+        secondary: '#104194',
+      },
     },
   },
   plugins: [],

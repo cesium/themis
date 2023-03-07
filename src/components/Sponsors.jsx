@@ -16,7 +16,12 @@ export function Sponsors() {
               key={sponsor.name}
               className="flex items-center justify-center"
             >
-              <Image src={`/images/logos/${sponsor.logo}`} alt={sponsor.name} height={70} width={120}/>
+              <Image
+                src={`/images/logos/${sponsor.logo}`}
+                alt={sponsor.name}
+                height={70}
+                width={120}
+              />
             </div>
           ))}
         </div>
