@@ -36,7 +36,7 @@ export function Papers() {
           />
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
-              <p className="font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
+              <p className="font-display text-4xl font-medium tracking-tighter text-secondary sm:text-5xl">
                 Call for Papers
               </p>
               <p className="mt-4 text-lg tracking-tight text-blue-900">
@@ -47,7 +47,7 @@ export function Papers() {
             </div>
             <div className="ml-36 flex-col gap-10">
               <form>
-                <h3 className="text-lg font-semibold tracking-tight text-blue-900">
+                <h3 className="text-lg font-semibold tracking-tight text-secondary">
                   Submete o Paper aqui{' '}
                   <span className="hidden sm:inline-flex" aria-hidden="true">
                     &darr;
@@ -60,10 +60,13 @@ export function Papers() {
                   </span>
                 </Button>
               </form>
-              <div className="flex flex-row mt-16 items-center gap-3">
-                <Link className="font-mono text-xs tracking-tighter text-slate-600" href="/">Regulamentação</Link>
-                <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
-                <Link className="font-mono text-xs tracking-tighter text-slate-600" href="/">Template</Link>
+              <div className="mt-16 flex flex-col">
+                <h1 className="font-semibold text-base tracking-tighter text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+                <div className="flex flex-row items-center gap-3">
+                  <Link className="font-mono text-sm tracking-tighter text-slate-600 underline" href="/">Regulamentação</Link>
+                  <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
+                  <Link className="font-mono text-sm tracking-tighter text-slate-600 underline" href="/">Template</Link>
+                </div>
               </div>
             </div>
           </div>
