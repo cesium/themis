@@ -22,7 +22,7 @@ export function Organization() {
                   src={`/images/organization/${organization.logo}`}
                   alt={organization.name}
                   height={80}
-                  width={`${organization.name == 'ELSA' ? 120 : 75}`}
+                  width={125}
                 />
               </a>
             </div>
