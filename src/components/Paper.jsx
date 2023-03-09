@@ -45,20 +45,23 @@ export function Papers() {
                 de apresentar o teu paper aos participantes da JORDI!
               </p>
             </div>
-            <div className="ml-36 flex-col gap-10">
+            <div className="flex items-center flex-col gap-10">
+              
+              
               <form>
-                <h3 className="text-lg font-semibold tracking-tight text-blue-900">
+                <h3 className="inline-block sm:block text-lg font-semibold tracking-tight text-blue-900">
                   Submete o Paper aqui{' '}
                   <span className="hidden sm:inline-flex" aria-hidden="true">
                     &darr;
                   </span>
                 </h3>
-                <Button type="submit" className="ml-20 mt-2 sm:ml-24" href="/">
+                <Button type="submit" className="ml-5 mt-2 sm:ml-24" href="/">
                   <span className="sr-only sm:not-sr-only">Submissão</span>
                   <span className="sm:hidden">
                     <ArrowRightIcon className="h-6 w-6" />
                   </span>
                 </Button>
+                
               </form>
               <div className="flex flex-row mt-16 items-center gap-3">
                 <Link className="font-mono text-xs tracking-tighter text-slate-600" href="/">Regulamentação</Link>
