@@ -62,10 +62,14 @@ export function Papers() {
               </form>
               <div className="mt-16 flex flex-col">
                 <h1 className="text-base font-semibold tracking-tighter text-secondary">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Mais informações 
+                  <span className="hidden sm:inline-flex" aria-hidden="true">
+                    &darr;
+                  </span>
                 </h1>
                 <div className="flex flex-row items-center gap-3">
                   <Link
+                    passHref
                     className="font-mono text-sm tracking-tighter text-slate-600 underline hover:no-underline"
                     href="/"
                   >
@@ -73,6 +77,7 @@ export function Papers() {
                   </Link>
                   <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
                   <Link
+                    passHref
                     className="font-mono text-sm tracking-tighter text-slate-600 underline hover:no-underline"
                     href="/"
                   >
