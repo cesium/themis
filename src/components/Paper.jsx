@@ -61,11 +61,23 @@ export function Papers() {
                 </Button>
               </form>
               <div className="mt-16 flex flex-col">
-                <h1 className="font-semibold text-base tracking-tighter text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+                <h1 className="text-base font-semibold tracking-tighter text-secondary">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </h1>
                 <div className="flex flex-row items-center gap-3">
-                  <Link className="font-mono text-sm tracking-tighter text-slate-600 underline" href="/">Regulamentação</Link>
+                  <Link
+                    className="font-mono text-sm tracking-tighter text-slate-600 underline"
+                    href="/"
+                  >
+                    Regulamentação
+                  </Link>
                   <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
-                  <Link className="font-mono text-sm tracking-tighter text-slate-600 underline" href="/">Template</Link>
+                  <Link
+                    className="font-mono text-sm tracking-tighter text-slate-600 underline"
+                    href="/"
+                  >
+                    Template
+                  </Link>
                 </div>
               </div>
             </div>
