@@ -1,7 +1,9 @@
 import Image from 'next/image'
 
+import Link from 'next/link'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import { DiamondIcon } from '@/components/DiamondIcon'
 import backgroundImage from 'public/images/background-newsletter.jpg'
 
 function ArrowRightIcon(props) {
@@ -34,7 +36,7 @@ export function Papers() {
           />
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
-              <p className="font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
+              <p className="font-display text-4xl font-medium tracking-tighter text-secondary sm:text-5xl">
                 Call for Papers
               </p>
               <p className="mt-4 text-lg tracking-tight text-blue-900">
@@ -43,20 +45,47 @@ export function Papers() {
                 de apresentar o teu paper aos participantes da JORDI!
               </p>
             </div>
-            <form className="ml-36">
-              <h3 className="text-lg font-semibold tracking-tight text-blue-900">
-                Submete o Paper aqui{' '}
-                <span className="hidden sm:inline-flex" aria-hidden="true">
-                  &darr;
-                </span>
-              </h3>
-              <Button type="submit" className="ml-20 mt-2 sm:ml-24" href="/">
-                <span className="sr-only sm:not-sr-only">Submissão</span>
-                <span className="sm:hidden">
-                  <ArrowRightIcon className="h-6 w-6" />
-                </span>
-              </Button>
-            </form>
+            <div className="flex flex-col items-center gap-10">
+              <form>
+                <h3 className="inline-block text-lg font-semibold tracking-tight text-secondary sm:block">
+                  Submete o Paper aqui{' '}
+                  <span className="hidden sm:inline-flex" aria-hidden="true">
+                    &darr;
+                  </span>
+                </h3>
+                <Button type="submit" className="ml-5 mt-2 sm:ml-24" href="/">
+                  <span className="sr-only sm:not-sr-only">Submissão</span>
+                  <span className="sm:hidden">
+                    <ArrowRightIcon className="h-6 w-6" />
+                  </span>
+                </Button>
+              </form>
+              <div className="mt-16 flex flex-col">
+                <h1 className="text-base font-semibold tracking-tighter text-secondary">
+                  Mais informações{' '}
+                  <span className="hidden sm:inline-flex" aria-hidden="true">
+                    &darr;
+                  </span>
+                </h1>
+                <div className="flex flex-row items-center gap-3">
+                  <Link
+                    passHref
+                    className="font-mono text-sm tracking-tighter text-slate-600 underline hover:no-underline"
+                    href="/"
+                  >
+                    Regulamentação
+                  </Link>
+                  <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
+                  <Link
+                    passHref
+                    className="font-mono text-sm tracking-tighter text-slate-600 underline hover:no-underline"
+                    href="/"
+                  >
+                    Template
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Container>
