@@ -45,9 +45,9 @@ export function Papers() {
                 de apresentar o teu paper aos participantes da JORDI!
               </p>
             </div>
-            <div className="flex items-center flex-col gap-10">
+            <div className="flex flex-col items-center gap-10">
               <form>
-                <h3 className="inline-block sm:block text-lg font-semibold tracking-tight text-secondary">
+                <h3 className="inline-block text-lg font-semibold tracking-tight text-secondary sm:block">
                   Submete o Paper aqui{' '}
                   <span className="hidden sm:inline-flex" aria-hidden="true">
                     &darr;
@@ -59,7 +59,6 @@ export function Papers() {
                     <ArrowRightIcon className="h-6 w-6" />
                   </span>
                 </Button>
-                
               </form>
               <div className="mt-16 flex flex-col">
                 <h1 className="text-base font-semibold tracking-tighter text-secondary">
