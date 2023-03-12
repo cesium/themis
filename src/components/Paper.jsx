@@ -66,14 +66,14 @@ export function Papers() {
                 </h1>
                 <div className="flex flex-row items-center gap-3">
                   <Link
-                    className="font-mono text-sm tracking-tighter text-slate-600 underline"
+                    className="font-mono text-sm tracking-tighter text-slate-600 underline hover:no-underline"
                     href="/"
                   >
                     Regulamentação
                   </Link>
                   <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
                   <Link
-                    className="font-mono text-sm tracking-tighter text-slate-600 underline"
+                    className="font-mono text-sm tracking-tighter text-slate-600 underline hover:no-underline"
                     href="/"
                   >
                     Template
