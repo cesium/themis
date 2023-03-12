@@ -62,7 +62,7 @@ export function Papers() {
               </form>
               <div className="mt-16 flex flex-col">
                 <h1 className="text-base font-semibold tracking-tighter text-secondary">
-                  Mais informações 
+                  Mais informações
                   <span className="hidden sm:inline-flex" aria-hidden="true">
                     &darr;
                   </span>
