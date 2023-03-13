@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
-import backgroundImage from 'public/images/background-newsletter.jpg'
+import backgroundImage from 'public/images/themis.png'
 
 function ArrowRightIcon(props) {
   return (
@@ -23,11 +23,15 @@ function ArrowRightIcon(props) {
 
 export function Papers() {
   return (
-    <section id="papers" aria-label="Papers">
+    <section
+      id="papers"
+      aria-label="Papers"
+      className="bg-jordi-black py-20 sm:py-32"
+    >
       <Container>
-        <div className="relative -mx-4 overflow-hidden bg-indigo-50 py-20 px-4 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
+        <div className="relative -mx-4 overflow-hidden bg-black/60 py-20 px-4 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           <Image
-            className="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]"
+            className="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] blur-lg lg:translate-x-[-32%]"
             src={backgroundImage}
             alt=""
             width={919}
@@ -36,10 +40,10 @@ export function Papers() {
           />
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
-              <p className="font-display text-4xl font-medium tracking-tighter text-secondary sm:text-5xl">
+              <p className="font-display text-4xl font-medium tracking-tighter text-jordi-orange-600 sm:text-5xl">
                 Call for Papers
               </p>
-              <p className="mt-4 text-lg tracking-tight text-blue-900">
+              <p className="mt-4 text-lg tracking-tight text-white">
                 Tens interesse em Direito Informático? Gostas de escrever?
                 Habilita-te a ganhar prémios incríveis, inclusive a oportunidade
                 de apresentar o teu paper aos participantes da JORDI!
@@ -47,13 +51,17 @@ export function Papers() {
             </div>
             <div className="flex flex-col items-center gap-10">
               <form>
-                <h3 className="inline-block text-lg font-semibold tracking-tight text-secondary sm:block">
+                <h3 className="inline-block text-lg font-semibold tracking-tight text-jordi-orange-600 sm:block">
                   Submete o Paper aqui{' '}
                   <span className="hidden sm:inline-flex" aria-hidden="true">
                     &darr;
                   </span>
                 </h3>
-                <Button type="submit" className="ml-5 mt-2 sm:ml-24" href="/">
+                <Button
+                  type="submit"
+                  className="ml-5 mt-2 bg-jordi-orange-700 text-white sm:ml-24"
+                  href="/"
+                >
                   <span className="sr-only sm:not-sr-only">Submissão</span>
                   <span className="sm:hidden">
                     <ArrowRightIcon className="h-6 w-6" />
@@ -61,16 +69,16 @@ export function Papers() {
                 </Button>
               </form>
               <div className="mt-16 flex flex-col">
-                <h1 className="text-base font-semibold tracking-tighter text-secondary">
+                <h1 className="text-base font-semibold tracking-tighter text-jordi-orange-600">
                   Mais informações{' '}
                   <span className="hidden sm:inline-flex" aria-hidden="true">
                     &darr;
                   </span>
                 </h1>
-                <div className="flex flex-row items-center gap-3">
+                <div className="flex flex-row items-center gap-3 text-white">
                   <Link
                     passHref
-                    className="font-mono text-sm tracking-tighter text-slate-600 underline hover:no-underline"
+                    className="font-mono text-sm tracking-tighter underline hover:no-underline"
                     href="/"
                   >
                     Regulamentação
@@ -78,7 +86,7 @@ export function Papers() {
                   <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
                   <Link
                     passHref
-                    className="font-mono text-sm tracking-tighter text-slate-600 underline hover:no-underline"
+                    className="font-mono text-sm tracking-tighter underline hover:no-underline"
                     href="/"
                   >
                     Template
