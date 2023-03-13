@@ -23,6 +23,10 @@ function ScheduleTabbed() {
     )
   }
 
+  function handleSelectDateIndex(index) {
+    setSelectedDateIndex(index)
+  }
+
   return (
     <Tab.Group
       as="div"
@@ -32,7 +36,11 @@ function ScheduleTabbed() {
       {/* MOBILE TABLIST DATE PICKER */}
       <Tab.List className="flex md:hidden">
         {schedule.map((day, dayIndex) => (
-          <Tab key={dayIndex} as="div" className="outline-transparent">
+          <Tab
+            key={dayIndex}
+            as="div"
+            className="outline-transparent [&:not(:focus-visible)]:focus:outline-none"
+          >
             {selectedDateIndex === dayIndex && (
               <div className="-ml-4 flex w-screen justify-between px-4">
                 <button
@@ -76,6 +84,7 @@ function ScheduleTabbed() {
                 'relative ml-4 w-[40%] flex-none pr-4 lg:w-auto lg:pr-0',
                 dayIndex !== selectedIndex && 'opacity-70',
               )}
+              onClick={() => handleSelectDateIndex(dayIndex)}
             >
               <DaySummary
                 day={{

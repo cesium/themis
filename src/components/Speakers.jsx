@@ -43,6 +43,10 @@ export function Speakers() {
     )
   }
 
+  function handleSelectDateIndex(index) {
+    setSelectedDateIndex(index)
+  }
+
   useEffect(() => {
     let lgMediaQuery = window.matchMedia('(min-width: 1024px)')
 
@@ -130,6 +134,7 @@ export function Speakers() {
                   <div
                     key={day.dateTime}
                     className="relative hidden md:block lg:block lg:pl-8"
+                    onClick={() => handleSelectDateIndex(dayIndex)}
                   >
                     <DiamondIcon
                       className={clsx(
