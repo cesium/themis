@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
-import backgroundImage from 'public/images/themis.png'
+import backgroundImage from 'public/images/logoLilas.png'
 
 function ArrowRightIcon(props) {
   return (
@@ -31,10 +31,10 @@ export function Papers() {
       <Container>
         <div className="relative -mx-4 overflow-hidden bg-black/60 py-20 px-4 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           <Image
-            className="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] blur-lg lg:translate-x-[-32%]"
+            className="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-2%] blur-md lg:translate-x-[-45%]"
             src={backgroundImage}
             alt=""
-            width={919}
+            width={500}
             height={1351}
             unoptimized
           />

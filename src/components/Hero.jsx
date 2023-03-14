@@ -10,10 +10,10 @@ export function Hero() {
     <div className="relative pt-10 pb-20 sm:py-24">
       <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-jordi-black">
         <Image
-          className="absolute top-0 left-0 translate-y-[-10%] translate-x-[-55%] -scale-x-100 blur-md sm:left-1/2 sm:translate-y-[-6%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-122%]"
+          className="absolute opacity-80 top-0 left-0 translate-y-[-10%] translate-x-[-55%] blur-lg sm:left-1/2 sm:translate-y-[-2%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-105%]"
           src={backgroundImage}
           alt=""
-          width={918}
+          width={1500}
           height={1495}
           priority
           unoptimized
@@ -44,7 +44,10 @@ export function Hero() {
               informáticos e proteção de dados, open-source, entre outros.
             </p>
           </div>
-          <Button href="#" className="mt-10 w-full sm:hidden">
+          <Button
+            href="#"
+            className="mt-10 w-full bg-jordi-orange-700 text-white hover:bg-jordi-orange-600 sm:hidden"
+          >
             Inscreve-te
           </Button>
           <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
