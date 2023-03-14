@@ -31,7 +31,7 @@ export function Papers() {
       <Container>
         <div className="relative -mx-4 overflow-hidden bg-black/60 py-20 px-4 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           <Image
-            className="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-2%] blur-md lg:translate-x-[-45%]"
+            className="absolute left-1/2 top-0 translate-x-[15%] translate-y-[10%] blur-md lg:translate-x-[-45%] lg:translate-y-[-2%]"
             src={backgroundImage}
             alt=""
             width={500}

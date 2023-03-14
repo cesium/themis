@@ -16,6 +16,7 @@ export default function Home() {
       <Head>
         <title>Jordi</title>
         <link rel="icon" href={favicon} />
+        <meta name="description" />
       </Head>
       <Header />
       <main>
