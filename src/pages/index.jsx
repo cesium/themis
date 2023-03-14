@@ -8,13 +8,14 @@ import { Speakers } from '@/components/Speakers'
 import { Sponsors } from '@/components/Sponsors'
 import { Organization } from '@/components/Organization'
 import { Papers } from '@/components/Paper'
+import favicon from 'public/favicon.ico'
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Jordi</title>
-        <meta name="description" />
+        <link rel="icon" href={favicon} />
       </Head>
       <Header />
       <main>
