@@ -191,7 +191,7 @@ export function Schedule() {
             Horário
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-secondary">
-            The worst people in our industry giving the best talks you’ve ever
+            O programa mais completo e interessante que poderias desejar!
           </p>
         </div>
       </Container>
