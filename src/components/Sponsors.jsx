@@ -5,9 +5,13 @@ import sponsors from '@/data/sponsors.json'
 
 export function Sponsors() {
   return (
-    <section id="sponsors" aria-label="Sponsors" className="py-20 sm:py-32">
+    <section
+      id="sponsors"
+      aria-label="Sponsors"
+      className="bg-jordi-black py-20 sm:py-32"
+    >
       <Container>
-        <h2 className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-secondary sm:text-5xl">
+        <h2 className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-jordi-orange-600 sm:text-5xl">
           Sponsorships
         </h2>
         <div className="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-y-12 gap-x-32 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
