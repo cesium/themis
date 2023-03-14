@@ -10,7 +10,7 @@ export function Hero() {
     <div className="relative pt-10 pb-20 sm:py-24">
       <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-jordi-black">
         <Image
-          className="absolute opacity-80 top-0 left-0 translate-y-[-10%] translate-x-[-55%] blur-lg sm:left-1/2 sm:translate-y-[-2%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-105%]"
+          className="absolute top-0 left-0 translate-y-[-10%] translate-x-[-55%] opacity-80 blur-lg sm:left-1/2 sm:translate-y-[-2%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-105%]"
           src={backgroundImage}
           alt=""
           width={1500}
