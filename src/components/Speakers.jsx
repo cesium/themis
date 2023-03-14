@@ -78,8 +78,7 @@ export function Speakers() {
             Oradores
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-secondary">
-            Learn from the experts on the cutting-edge of deception at the most
-            sinister companies.
+            Conhece alguns dos indivíduos mais brilhantes da área!
           </p>
         </div>
         <Tab.Group

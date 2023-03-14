@@ -66,10 +66,15 @@ export function Blog() {
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-secondary">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Quibusdam dicta odio temporibus sequi non, ducimus rerum dolor
-              maiores, error tempore dolorem explicabo quas aperiam accusamus
-              dolores aliquam iusto. Ratione, exercitationem.
+              Chegaram ao fim as Jornadas do Direito Informático! 
+              Foram três dias de novo conhecimento, tecnologias <i>cutting-edge</i>
+              e uma das áreas emergentes mais fascinantes da atualidade!
+
+              Parabéns aos vencedores e um muito obrigado por explorarem
+              connosco e descobrirem mais da simbiose entre Direito e Informática.
+              
+              Por um futuro mais justo e mais tecnológico e por uma evolução 
+              mais inteligente e sempre mutável!
             </p>
           </div>
         </div>
