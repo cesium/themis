@@ -24,8 +24,8 @@ export function Hero() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-5xl font-bold tracking-tighter text-jordi-orange-600 sm:text-7xl">
-            <span className="sr-only">Jordi </span>Jornadas de Direito
-            Informático
+            <span className="sr-only">Jordi </span>Jornadas de Direito e
+            Informática
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-white">
             <p>
