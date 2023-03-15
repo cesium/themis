@@ -8,16 +8,18 @@ import favicon from 'public/favicon.ico'
 export default function Paper() {
   return (
     <>
-      <Head>
-        <title>Jordi</title>
-        <link rel="icon" href={favicon} />
-        <meta name="description" />
-      </Head>
-      <Header />
-      <main>
-        <Blog />
-      </main>
-      <Footer />
+      <div className="bg-jordi-black">
+        <Head>
+          <title>Jordi</title>
+          <link rel="icon" href={favicon} />
+          <meta name="description" />
+        </Head>
+        <Header />
+        <main>
+          <Blog />
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }
