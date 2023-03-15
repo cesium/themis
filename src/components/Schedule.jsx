@@ -4,7 +4,7 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import backgroundImage from 'public/images/background.jpg'
+import backgroundImage from 'public/images/themis.png'
 
 import schedule from '@/data/schedule.json'
 
@@ -44,26 +44,26 @@ function ScheduleTabbed() {
             {selectedDateIndex === dayIndex && (
               <div className="-ml-4 flex w-screen justify-between px-4">
                 <button
-                  className="px-4 font-mono text-4xl text-primary"
+                  className="px-4 font-mono text-4xl text-jordi-orange-600"
                   onClick={handleSelectPrevDateIndex}
                 >
                   &lt;
                 </button>
 
                 <div className="text-center">
-                  <span className="font-mono text-sm text-primary">
+                  <span className="font-mono text-sm text-jordi-orange-600">
                     {day.name}
                   </span>
                   <time
                     dateTime={day.dateTime}
-                    className="mt-1.5 block text-2xl font-semibold tracking-tight text-secondary sm:ml-0"
+                    className="mt-1.5 block text-2xl font-semibold tracking-tight text-jordi-orange-600 sm:ml-0"
                   >
                     {day.date}
                   </time>
                 </div>
 
                 <button
-                  className="px-4 font-mono text-4xl text-primary"
+                  className="px-4 font-mono text-4xl text-jordi-orange-600"
                   onClick={handleSelectNextDateIndex}
                 >
                   &gt;
@@ -118,10 +118,10 @@ function ScheduleTabbed() {
 function DaySummary({ day }) {
   return (
     <>
-      <h3 className="text-xl font-semibold tracking-tight text-secondary sm:text-2xl">
+      <h3 className="text-xl font-semibold tracking-tight text-jordi-orange-600 sm:text-2xl">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="mt-1.5 hidden text-sm tracking-tight text-secondary lg:flex lg:text-base">
+      <p className="mt-1.5 hidden text-sm tracking-tight text-white lg:flex lg:text-base">
         {day.summary}
       </p>
     </>
@@ -134,7 +134,7 @@ function TimeSlots({ day, className }) {
       role="list"
       className={clsx(
         className,
-        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-secondary/5 backdrop-blur',
+        'shadow-secondary/5 space-y-8 bg-black/60 py-14 px-10 text-center shadow-xl backdrop-blur',
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
@@ -145,15 +145,15 @@ function TimeSlots({ day, className }) {
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-secondary">
+          <h4 className="text-lg font-semibold tracking-tight text-jordi-orange-600">
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-secondary">
+            <p className="mt-1 tracking-tight text-white">
               {timeSlot.description}
             </p>
           )}
-          <p className="mt-1 font-mono text-sm text-slate-500">
+          <p className="mt-1 font-mono text-sm text-jordi-purple-300">
             <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
               {timeSlot.start}
             </time>{' '}
@@ -184,29 +184,33 @@ function ScheduleStatic() {
 
 export function Schedule() {
   return (
-    <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
+    <section
+      id="schedule"
+      aria-label="Schedule"
+      className="bg-black py-20 sm:py-32"
+    >
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="font-display text-4xl font-medium tracking-tighter text-primary sm:text-5xl">
+          <h2 className="font-display text-4xl font-medium tracking-tighter text-jordi-orange-600 sm:text-5xl">
             Horário
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-secondary">
+          <p className="mt-4 font-display text-2xl tracking-tight text-white">
             The worst people in our industry giving the best talks you’ve ever
           </p>
         </div>
       </Container>
       <div className="relative mt-14 sm:mt-24">
-        <div className="absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-indigo-50">
+        <div className="absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-jordi-black">
           <Image
-            className="absolute left-full top-0 -translate-x-1/2 -scale-x-100 sm:left-1/2 sm:translate-y-[-15%] sm:translate-x-[-20%] md:translate-x-0 lg:translate-x-[5%] lg:translate-y-[4%] xl:translate-y-[-8%] xl:translate-x-[27%]"
+            className="absolute left-full top-0 -translate-x-1/2 -scale-x-100 blur-md sm:left-1/2 sm:translate-y-[-15%] sm:translate-x-[-20%] md:translate-x-0 lg:translate-x-[5%] lg:translate-y-[4%] xl:translate-y-[-8%] xl:translate-x-[27%]"
             src={backgroundImage}
             alt=""
             width={918}
             height={1495}
             unoptimized
           />
-          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-jordi-black" />
         </div>
         <Container className="relative">
           <ScheduleTabbed />

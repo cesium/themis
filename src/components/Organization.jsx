@@ -5,11 +5,11 @@ import organizers from '@/data/organization.json'
 
 export function Organization() {
   return (
-    <div className="py-16">
+    <div className="bg-jordi-black py-16">
       <Container className="flex flex-col items-center justify-center gap-10">
         <h2
           id="speakers-title"
-          className="font-display text-3xl font-medium tracking-tighter text-secondary"
+          className="font-display text-3xl font-medium tracking-tighter text-jordi-orange-600"
         >
           Organizadores
         </h2>
