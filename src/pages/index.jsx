@@ -13,21 +13,23 @@ import favicon from 'public/favicon.ico'
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Jordi</title>
-        <link rel="icon" href={favicon} />
-        <meta name="description" />
-      </Head>
-      <Header />
-      <main>
-        <Hero />
-        <Speakers />
-        <Schedule />
-        <Papers />
-        <Sponsors />
-        <Organization />
-      </main>
-      <Footer />
+      <div className="bg-jordi-black">
+        <Head>
+          <title>Jordi</title>
+          <link rel="icon" href={favicon} />
+          <meta name="description" />
+        </Head>
+        <Header />
+        <main>
+          <Hero />
+          <Speakers />
+          <Schedule />
+          <Papers />
+          <Sponsors />
+          <Organization />
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }
