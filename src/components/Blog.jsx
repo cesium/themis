@@ -68,7 +68,8 @@ export function Blog() {
             <p>
               Chegaram ao fim as Jornadas do Direito Informático! Foram três
               dias de novo conhecimento, tecnologias
-              {''}<i>cutting-edge</i> e uma das áreas emergentes mais fascinantes da
+              {''}
+              <i>cutting-edge</i> e uma das áreas emergentes mais fascinantes da
               atualidade! Parabéns aos vencedores e um muito obrigado por
               explorarem connosco e descobrirem mais da simbiose entre Direito e
               Informática. Por um futuro mais justo e mais tecnológico e por uma
