@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Container } from '@/components/Container'
 import { Button } from '@/components/Button'
 import React, { useState } from 'react'
-import backgroundImage from 'public/images/background.jpg'
+import backgroundImage from 'public/images/themis.png'
 import writers from '@/data/blog.json'
 
 function ShowPaper({ paper }) {
@@ -14,19 +14,24 @@ function ShowPaper({ paper }) {
   }
 
   return (
-    <div className="mb-6 space-y-8 rounded-2xl bg-white/60 py-14 px-10 text-start shadow-xl shadow-secondary/5 backdrop-blur">
-      <p className="text-xl font-semibold tracking-tight text-secondary">
+    <div className="shadow-secondary/5 mb-6 space-y-8 rounded-2xl bg-black/60 py-14 px-10 text-start shadow-xl backdrop-blur">
+      <p className="text-xl font-semibold tracking-tight text-jordi-orange-600">
         {paper.author}
       </p>
-      <p className="mt-1 font-mono text-sm text-slate-500">{paper.course}</p>
-      <p className="mt-1 tracking-tight text-secondary">{paper.title}</p>
-      <p className={`text-base ${open ? 'text-slate-700' : 'hidden'}`}>
+      <p className="mt-1 font-mono text-sm text-jordi-orange-700">
+        {paper.course}
+      </p>
+      <p className="mt-1 tracking-tight text-jordi-orange-600">{paper.title}</p>
+      <p className={`text-base ${open ? 'text-white' : 'hidden'}`}>
         {paper.text}
       </p>
-      <p className={`text-base ${open ? 'hidden' : 'text-slate-500'}`}>
+      <p className={`text-base ${open ? 'hidden' : 'text-white/70'}`}>
         {paper.summary}
       </p>
-      <Button className="mx-[40%]" onClick={handleToggle}>
+      <Button
+        className="mx-[40%] bg-jordi-orange-700 text-white"
+        onClick={handleToggle}
+      >
         {open ? 'Mostrar menos' : 'Mostrar mais'}
       </Button>
     </div>
@@ -46,9 +51,9 @@ function PaperStatic() {
 export function Blog() {
   return (
     <div className="relative pt-10 pb-20 sm:py-5">
-      <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-indigo-50">
+      <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-jordi-black">
         <Image
-          className="absolute top-0 left-0 translate-y-[-10%] translate-x-[-55%] -scale-x-100 sm:left-1/2 sm:translate-y-[-6%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-122%]"
+          className="absolute top-0 left-0 translate-y-[-10%] translate-x-[-55%] -scale-x-100 blur-md sm:left-1/2 sm:translate-y-[-6%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-122%]"
           src={backgroundImage}
           alt=""
           width={918}
@@ -56,15 +61,15 @@ export function Blog() {
           priority
           unoptimized
         />
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-jordi-black" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-jordi-black" />
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-          <h1 className="font-display text-5xl font-bold tracking-tighter text-primary sm:text-7xl">
+          <h1 className="font-display text-5xl font-bold tracking-tighter text-jordi-orange-600 sm:text-7xl">
             <span className="sr-only">Papers </span>Papers
           </h1>
-          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-secondary">
+          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-white">
             <p>
               Chegaram ao fim as Jornadas do Direito Informático! Foram três
               dias de novo conhecimento, tecnologias
