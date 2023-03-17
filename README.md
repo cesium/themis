@@ -1,35 +1,40 @@
-# Keynote
+<h1 align="center">
+  <a href="">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="public/images/logoLilas.png">
+      <source media="(prefers-color-scheme: light)" srcset="public/images/logoLilas.png">
+      <img alt="jordi" height="auto" width="200px">
+    </picture>
+  </a>
+</h1>
 
-Keynote is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+[![Style][style-status]][style-workflow]
 
-## Getting started
+> :balance_scale: JORDI which stands for "Jornadas de Direito Informático"
 
-To get started with this template, first install the npm dependencies:
+## 🤝 Contributing
 
-```bash
-npm install
-```
+When contributing to this repository, please first discuss the change you wish
+to make via discussions, issue, email, or any other method with the owners of
+this repository before making a change.
 
-Next, run the development server:
+Please note we have a [Code of Conduct][code_of_conduct], please follow it
+in all your interactions with the project.
 
-```bash
-npm run dev
-```
+We have a [Contributing Guide][contributing] to help you getting started.
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+## 📝 License
 
-## Customizing
+<img src=".github/brand/cesium-DARK.svg#gh-light-mode-only" width="300">
+<img src=".github/brand/cesium-LIGHT.svg#gh-dark-mode-only" width="300">
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+Copyright (c) 2023, CeSIUM.
 
-## License
+This project is licensed under the MIT License - see the [LICENSE][license]
+file for details.
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
+[style-status]: https://github.com/cesium/store/actions/workflows/style.yml/badge.svg
+[style-workflow]: https://github.com/cesium/store/actions/workflows/style.yml/badge.svg
+[code_of_conduct]: CODE_OF_CONDUCT.md
+[contributing]: CONTRIBUTING.md
+[license]: LICENSE.txt
