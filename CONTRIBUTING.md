@@ -55,4 +55,3 @@ uses.
 
 - [Getting Started with React](https://reactjs.org/docs/getting-started.html)
 - [Learn Next.js](https://nextjs.org/learn)
-- [Getting Started with React Leaflet](https://react-leaflet.js.org/docs/start-introduction/)
