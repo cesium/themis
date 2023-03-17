@@ -5,6 +5,8 @@ import { Container } from '@/components/Container'
 import backgroundImage from 'public/images/themis.png'
 import hero from '@/data/hero.json'
 
+import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+
 export function Hero() {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
@@ -62,6 +64,45 @@ export function Hero() {
               </div>
             ))}
           </dl>
+          <div className="mt-16">
+            <h5 className="text-2xl font-bold tracking-tight text-jordi-orange-700">
+              Sigam-nos :
+            </h5>
+            <div className="mt-4 flex flex-row justify-start text-white">
+              <a
+                className="mr-5 w-5 hover:opacity-50"
+                href="https://github.com/cesium/themis"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
+              <a
+                className="mr-5 w-5 hover:opacity-50"
+                href="https://www.instagram.com/jordiuminho"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                className="mr-5 w-5 hover:opacity-50"
+                href="https://www.instagram.com/jordiuminho"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                className="mr-5 w-5 hover:opacity-50"
+                href="mailto:jornadasdtoinf@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaEnvelope />
+              </a>
+            </div>
+          </div>
         </div>
       </Container>
     </div>
