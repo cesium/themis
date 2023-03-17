@@ -5,6 +5,14 @@ import { Container } from '@/components/Container'
 import backgroundImage from 'public/images/themis.png'
 import hero from '@/data/hero.json'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faInstagram,
+  faGithubAlt,
+  faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
 export function Hero() {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
@@ -62,6 +70,45 @@ export function Hero() {
               </div>
             ))}
           </dl>
+          <div className="mt-16">
+            <h5 className="text-2xl font-bold tracking-tight text-jordi-orange-700">
+              Sigam-nos :
+            </h5>
+            <div className="mt-4 justify-center text-white">
+              <a
+                className="ml-2 mr-5 w-5 hover:opacity-50"
+                href="https://github.com/cesium/themis"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithubAlt} />
+              </a>
+              <a
+                className="mr-5 w-5 hover:opacity-50"
+                href="https://www.instagram.com/jordiuminho"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a
+                className="mr-5 w-5 hover:opacity-50"
+                href="https://www.instagram.com/jordiuminho"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
+              <a
+                className="mr-5 w-5 hover:opacity-50"
+                href="mailto:jornadasdtoinf@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
+            </div>
+          </div>
         </div>
       </Container>
     </div>
