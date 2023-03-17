@@ -5,7 +5,7 @@ import { Container } from '@/components/Container'
 import backgroundImage from 'public/images/themis.png'
 import hero from '@/data/hero.json'
 
-import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 export function Hero() {
   return (
@@ -68,14 +68,14 @@ export function Hero() {
             <h5 className="text-2xl font-bold tracking-tight text-jordi-orange-700">
               Sigam-nos :
             </h5>
-            <div className="mt-4 justify-start flex flex-row text-white">
+            <div className="mt-4 flex flex-row justify-start text-white">
               <a
                 className="mr-5 w-5 hover:opacity-50"
                 href="https://github.com/cesium/themis"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub/>
+                <FaGithub />
               </a>
               <a
                 className="mr-5 w-5 hover:opacity-50"
