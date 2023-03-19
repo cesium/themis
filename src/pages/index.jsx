@@ -26,9 +26,9 @@ export default function Home() {
           <Speakers />
           <Schedule />
           <Papers />
+          <Team />
           <Sponsors />
           <Organization />
-          <Team />
         </main>
         <Footer />
       </div>
