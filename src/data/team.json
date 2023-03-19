@@ -3,7 +3,7 @@
     "name": "Organização Geral",
     "members": [
       {
-        "name": "Gerson Junior",
+        "name": "Gerson Júnior",
         "organization": "CeSIUM",
         "image": "gersonjunior.jpg",
         "social": "https://github.com/GresosJ"
@@ -23,7 +23,7 @@
         "name": "Enzo Vieira",
         "organization": "CeSIUM",
         "image": "default.jpg",
-        "social": "/"
+        "social": "https://github.com/EnzoVieira"
       },
       {
         "name": "Rui Lopes",
@@ -32,7 +32,7 @@
         "social": "/"
       },
       {
-        "name": "Felipe Felicio",
+        "name": "Filipe Felício",
         "organization": "CeSIUM",
         "image": "default.jpg",
         "social": "/"
@@ -79,7 +79,7 @@
         "social": "/"
       },
       {
-        "name": "Adriana Fraizão",
+        "name": "Adriana Frazão",
         "organization": "CeSIUM",
         "image": "default.jpg",
         "social": "/"
@@ -93,7 +93,7 @@
     ]
   },
   {
-    "name": "Empresas & Patrocínios",
+    "name": "Parcerias & Patrocínios",
     "members": [
       {
         "name": "Pedro Pereira",
@@ -131,7 +131,7 @@
         "social": "/"
       },
       {
-        "name": "Helder Gomes",
+        "name": "Hélder Gomes",
         "organization": "CeSIUM",
         "image": "default.jpg",
         "social": "/"
