@@ -26,12 +26,6 @@
         "social": "https://github.com/EnzoVieira"
       },
       {
-        "name": "Rui Lopes",
-        "organization": "CeSIUM",
-        "image": "default.jpg",
-        "social": "/"
-      },
-      {
         "name": "Filipe Felício",
         "organization": "CeSIUM",
         "image": "default.jpg",
@@ -39,6 +33,12 @@
       },
       {
         "name": "Mário Rodrigues",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
+      },
+      {
+        "name": "Rui Lopes",
         "organization": "CeSIUM",
         "image": "default.jpg",
         "social": "/"
@@ -61,7 +61,7 @@
     "name": "Marketing",
     "members": [
       {
-        "name": "Gustavo Pereira",
+        "name": "Adriana Frazão",
         "organization": "CeSIUM",
         "image": "default.jpg",
         "social": "/"
@@ -73,19 +73,19 @@
         "social": "/"
       },
       {
-        "name": "Joana Branco",
-        "organization": "CeSIUM",
-        "image": "default.jpg",
-        "social": "/"
-      },
-      {
-        "name": "Adriana Frazão",
-        "organization": "CeSIUM",
-        "image": "default.jpg",
-        "social": "/"
-      },
-      {
         "name": "Francisco Neves",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
+      },
+      {
+        "name": "Gustavo Pereira",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
+      },
+      {
+        "name": "Joana Branco",
         "organization": "CeSIUM",
         "image": "default.jpg",
         "social": "/"
@@ -96,13 +96,13 @@
     "name": "Parcerias & Patrocínios",
     "members": [
       {
-        "name": "Pedro Pereira",
+        "name": "João Sá",
         "organization": "CeSIUM",
         "image": "default.jpg",
         "social": "/"
       },
       {
-        "name": "João Sá",
+        "name": "Pedro Pereira",
         "organization": "CeSIUM",
         "image": "default.jpg",
         "social": "/"
@@ -119,13 +119,13 @@
         "social": "/"
       },
       {
-        "name": "Leonardo Freitas",
-        "organization": "CeSIUM",
+        "name": "Carolina Costa",
+        "organization": "ELSA",
         "image": "default.jpg",
         "social": "/"
       },
       {
-        "name": "Carolina Costa",
+        "name": "Diana",
         "organization": "ELSA",
         "image": "default.jpg",
         "social": "/"
@@ -137,8 +137,8 @@
         "social": "/"
       },
       {
-        "name": "Diana",
-        "organization": "ELSA",
+        "name": "Leonardo Freitas",
+        "organization": "CeSIUM",
         "image": "default.jpg",
         "social": "/"
       },
