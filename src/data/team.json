@@ -6,13 +6,13 @@
         "name": "Gerson Junior",
         "organization": "CeSIUM",
         "image": "gersonjunior.jpg",
-        "social" : "https://github.com/GresosJ"
+        "social": "https://github.com/GresosJ"
       },
       {
         "name": "Sofia Lucas",
         "organization": "ELSA",
         "image": "sofialucas.jpg",
-        "social" : "https://www.linkedin.com/in/sofiammlucas/"
+        "social": "https://www.linkedin.com/in/sofiammlucas/"
       }
     ]
   },
@@ -23,7 +23,7 @@
         "name": "Enzo Vieira",
         "organization": "CeSIUM",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       }
     ]
   },
@@ -34,31 +34,31 @@
         "name": "Gustavo Pereira",
         "organization": "CeSIUM",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       },
       {
         "name": "Bruna Lima",
         "organization": "ELSA",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       },
       {
         "name": "Joana Branco",
         "organization": "CeSIUM",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       },
       {
         "name": "Adriana Fraizão",
         "organization": "CeSIUM",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       },
       {
         "name": "Francisco Neves",
         "organization": "CeSIUM",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       }
     ]
   },
@@ -69,13 +69,13 @@
         "name": "Pedro Pereira",
         "organization": "CeSIUM",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       },
       {
         "name": "João Sá",
         "organization": "CeSIUM",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       }
     ]
   },
@@ -86,37 +86,37 @@
         "name": "Ana Lira",
         "organization": "ELSA",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       },
       {
         "name": "Leonardo Freitas",
         "organization": "CeSIUM",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       },
       {
         "name": "Carolina Costa",
         "organization": "ELSA",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       },
       {
         "name": "Helder Gomes",
         "organization": "CeSIUM",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       },
       {
         "name": "Diana",
         "organization": "ELSA",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       },
       {
         "name": "Rafael Ferreira",
         "organization": "CeSIUM",
         "image": "default.jpg",
-        "social" : "/"
+        "social": "/"
       }
     ]
   }
