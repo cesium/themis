@@ -173,22 +173,24 @@ export function Team() {
                         className="absolute inset-0 bg-indigo-50"
                         style={{ clipPath: `url(#${id}-${index % 3})` }}
                       >
-                        <Image
-                          className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
-                          src={`/images/avatars/${member.image}`}
-                          alt=""
-                          priority
-                          sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
-                          width={560}
-                          height={560}
-                        />
+                        <a href={`${member.social}`}>
+                          <Image
+                            className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+                            src={`/images/team/${member.image}`}
+                            alt=""
+                            priority
+                            sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                            width={560}
+                            height={560}
+                          />
+                        </a>
                       </div>
                     </div>
                     <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-purple-200">
                       {member.name}
                     </h3>
                     <p className="mt-1 text-base tracking-tight text-white">
-                      {member.role}
+                      {member.organization}
                     </p>
                   </div>
                 ))}

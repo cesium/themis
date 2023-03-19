@@ -3,14 +3,16 @@
     "name": "Organização Geral",
     "members": [
       {
-        "name": "Steven Mchail",
-        "role": "Designer at Globex Corporation",
-        "image": "steven-mchail.jpg"
+        "name": "Gerson Júnior",
+        "organization": "CeSIUM",
+        "image": "gersonjunior.png",
+        "social": "https://github.com/GresosJ"
       },
       {
-        "name": "Jaquelin Isch",
-        "role": "UX Design at InGen",
-        "image": "jaquelin-isch.jpg"
+        "name": "Sofia Lucas",
+        "organization": "ELSA",
+        "image": "sofialucas.jpg",
+        "social": "https://www.linkedin.com/in/sofiammlucas/"
       }
     ]
   },
@@ -18,34 +20,40 @@
     "name": "Tecnologia",
     "members": [
       {
-        "name": "Damaris Kimura",
-        "role": "Senior Engineer at OCP",
-        "image": "damaris-kimura.jpg"
+        "name": "Enzo Vieira",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "https://github.com/EnzoVieira"
       },
       {
-        "name": "Ibrahim Frasch",
-        "role": "Programmer at Umbrella Corp",
-        "image": "ibrahim-frasch.jpg"
+        "name": "Filipe Felício",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "https://github.com/feliciofilipe"
       },
       {
-        "name": "Cathlene Burrage",
-        "role": "Frontend Developer at Buy n Large",
-        "image": "cathlene-burrage.jpg"
+        "name": "Mário Rodrigues",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "https://github.com/marioRodrigues10"
       },
       {
-        "name": "Rinaldo Beynon",
-        "role": "Data Scientist at Rekall",
-        "image": "rinaldo-beynon.jpg"
+        "name": "Rui Lopes",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "https://github.com/RuiL1904"
       },
       {
-        "name": "Waylon Hyden",
-        "role": "DevOps at RDA Corporation",
-        "image": "waylon-hyden.jpg"
+        "name": "Rui Oliveira",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "https://github.com/ruioliveira02"
       },
       {
-        "name": "Giordano Sagucio",
-        "role": "Game Developer at Soylent Corp",
-        "image": "giordano-sagucio.jpg"
+        "name": "Tiago Bacelar",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "https://github.com/tiago-bacelar"
       }
     ]
   },
@@ -53,69 +61,92 @@
     "name": "Marketing",
     "members": [
       {
-        "name": "Steven Mchail",
-        "role": "Designer at Globex Corporation",
-        "image": "steven-mchail.jpg"
+        "name": "Adriana Frazão",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
       },
       {
-        "name": "Jaquelin Isch",
-        "role": "UX Design at InGen",
-        "image": "jaquelin-isch.jpg"
+        "name": "Bruna Lima",
+        "organization": "ELSA",
+        "image": "default.jpg",
+        "social": "/"
       },
       {
-        "name": "Dianne Guilianelli",
-        "role": "General Manager at Initech",
-        "image": "dianne-guilianelli.jpg"
+        "name": "Francisco Neves",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
       },
       {
-        "name": "Ronni Cantadore",
-        "role": "Design Engineer at Weyland-Yutani",
-        "image": "ronni-cantadore.jpg"
+        "name": "Gustavo Pereira",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
       },
       {
-        "name": "Erhart Cockrin",
-        "role": "Product Lead at Cyberdyne Systems",
-        "image": "erhart-cockrin.jpg"
-      },
-      {
-        "name": "Parker Johnson",
-        "role": "UI Designer at MomCorp",
-        "image": "parker-johnson.jpg"
+        "name": "Joana Branco",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
       }
     ]
   },
   {
-    "name": "Empresas & Patrocínios",
+    "name": "Parcerias & Patrocínios",
     "members": [
       {
-        "name": "Steven Mchail",
-        "role": "Designer at Globex Corporation",
-        "image": "steven-mchail.jpg"
+        "name": "João Sá",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
       },
       {
-        "name": "Jaquelin Isch",
-        "role": "UX Design at InGen",
-        "image": "jaquelin-isch.jpg"
+        "name": "Pedro Pereira",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
+      }
+    ]
+  },
+  {
+    "name": "Programa",
+    "members": [
+      {
+        "name": "Ana Lira",
+        "organization": "ELSA",
+        "image": "default.jpg",
+        "social": "/"
       },
       {
-        "name": "Dianne Guilianelli",
-        "role": "General Manager at Initech",
-        "image": "dianne-guilianelli.jpg"
+        "name": "Carolina Costa",
+        "organization": "ELSA",
+        "image": "default.jpg",
+        "social": "/"
       },
       {
-        "name": "Ronni Cantadore",
-        "role": "Design Engineer at Weyland-Yutani",
-        "image": "ronni-cantadore.jpg"
+        "name": "Diana",
+        "organization": "ELSA",
+        "image": "default.jpg",
+        "social": "/"
       },
       {
-        "name": "Erhart Cockrin",
-        "role": "Product Lead at Cyberdyne Systems",
-        "image": "erhart-cockrin.jpg"
+        "name": "Hélder Gomes",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
       },
       {
-        "name": "Parker Johnson",
-        "role": "UI Designer at MomCorp",
-        "image": "parker-johnson.jpg"
+        "name": "Leonardo Freitas",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
+      },
+      {
+        "name": "Rafael Ferreira",
+        "organization": "CeSIUM",
+        "image": "default.jpg",
+        "social": "/"
       }
     ]
   }
