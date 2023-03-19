@@ -67,13 +67,12 @@ export function Blog() {
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-secondary">
             <p>
               Chegaram ao fim as Jornadas do Direito Informático! Foram três
-              dias de novo conhecimento, tecnologias
-              {''}
-              <i>cutting-edge</i> e uma das áreas emergentes mais fascinantes da
-              atualidade! Parabéns aos vencedores e um muito obrigado por
-              explorarem connosco e descobrirem mais da simbiose entre Direito e
-              Informática. Por um futuro mais justo e mais tecnológico e por uma
-              evolução mais inteligente e sempre mutável!
+              dias de novo conhecimento, tecnologias <i>cutting-edge</i> e uma
+              das áreas emergentes mais fascinantes da atualidade! Parabéns aos
+              vencedores e um muito obrigado por explorarem connosco e
+              descobrirem mais da simbiose entre Direito e Informática. Por um
+              futuro mais justo e mais tecnológico e por uma evolução mais
+              inteligente e sempre mutável!
             </p>
           </div>
         </div>
