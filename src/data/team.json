@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Organização Geral",
+    "members": [
+      {
+        "name": "Steven Mchail",
+        "role": "Designer at Globex Corporation",
+        "image": "steven-mchail.jpg"
+      },
+      {
+        "name": "Jaquelin Isch",
+        "role": "UX Design at InGen",
+        "image": "jaquelin-isch.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Tecnologia",
+    "members": [
+      {
+        "name": "Damaris Kimura",
+        "role": "Senior Engineer at OCP",
+        "image": "damaris-kimura.jpg"
+      },
+      {
+        "name": "Ibrahim Frasch",
+        "role": "Programmer at Umbrella Corp",
+        "image": "ibrahim-frasch.jpg"
+      },
+      {
+        "name": "Cathlene Burrage",
+        "role": "Frontend Developer at Buy n Large",
+        "image": "cathlene-burrage.jpg"
+      },
+      {
+        "name": "Rinaldo Beynon",
+        "role": "Data Scientist at Rekall",
+        "image": "rinaldo-beynon.jpg"
+      },
+      {
+        "name": "Waylon Hyden",
+        "role": "DevOps at RDA Corporation",
+        "image": "waylon-hyden.jpg"
+      },
+      {
+        "name": "Giordano Sagucio",
+        "role": "Game Developer at Soylent Corp",
+        "image": "giordano-sagucio.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Marketing",
+    "members": [
+      {
+        "name": "Steven Mchail",
+        "role": "Designer at Globex Corporation",
+        "image": "steven-mchail.jpg"
+      },
+      {
+        "name": "Jaquelin Isch",
+        "role": "UX Design at InGen",
+        "image": "jaquelin-isch.jpg"
+      },
+      {
+        "name": "Dianne Guilianelli",
+        "role": "General Manager at Initech",
+        "image": "dianne-guilianelli.jpg"
+      },
+      {
+        "name": "Ronni Cantadore",
+        "role": "Design Engineer at Weyland-Yutani",
+        "image": "ronni-cantadore.jpg"
+      },
+      {
+        "name": "Erhart Cockrin",
+        "role": "Product Lead at Cyberdyne Systems",
+        "image": "erhart-cockrin.jpg"
+      },
+      {
+        "name": "Parker Johnson",
+        "role": "UI Designer at MomCorp",
+        "image": "parker-johnson.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Empresas & Patrocínios",
+    "members": [
+      {
+        "name": "Steven Mchail",
+        "role": "Designer at Globex Corporation",
+        "image": "steven-mchail.jpg"
+      },
+      {
+        "name": "Jaquelin Isch",
+        "role": "UX Design at InGen",
+        "image": "jaquelin-isch.jpg"
+      },
+      {
+        "name": "Dianne Guilianelli",
+        "role": "General Manager at Initech",
+        "image": "dianne-guilianelli.jpg"
+      },
+      {
+        "name": "Ronni Cantadore",
+        "role": "Design Engineer at Weyland-Yutani",
+        "image": "ronni-cantadore.jpg"
+      },
+      {
+        "name": "Erhart Cockrin",
+        "role": "Product Lead at Cyberdyne Systems",
+        "image": "erhart-cockrin.jpg"
+      },
+      {
+        "name": "Parker Johnson",
+        "role": "UI Designer at MomCorp",
+        "image": "parker-johnson.jpg"
+      }
+    ]
+  }
+]

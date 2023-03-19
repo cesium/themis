@@ -8,6 +8,7 @@ import { Speakers } from '@/components/Speakers'
 import { Sponsors } from '@/components/Sponsors'
 import { Organization } from '@/components/Organization'
 import { Papers } from '@/components/Paper'
+import { Team } from '@/components/Team'
 import favicon from 'public/favicon.ico'
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
           <Papers />
           <Sponsors />
           <Organization />
+          <Team />
         </main>
         <Footer />
       </div>
