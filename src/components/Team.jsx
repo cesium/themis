@@ -76,7 +76,7 @@ export function Team() {
             Equipa
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-jordi-black">
-            A coleção mais aleatória de nerds e chatos que gostam de debater
+            Vem conhecer a equipa que organizou este fantástico evento!
           </p>
         </div>
         <Tab.Group
