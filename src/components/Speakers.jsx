@@ -108,7 +108,7 @@ export function Speakers() {
                         </span>
                         <time
                           dateTime={day.dateTime}
-                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-jordi-orange-500 sm:ml-0"
+                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-jordi-black sm:ml-0"
                         >
                           {day.date}
                         </time>
@@ -159,7 +159,7 @@ export function Speakers() {
                       </div>
                       <time
                         dateTime={day.dateTime}
-                        className="mt-1.5 ml-5 block text-2xl font-semibold tracking-tight text-jordi-orange-300 sm:ml-0"
+                        className="mt-1.5 ml-5 block text-2xl font-semibold tracking-tight text-jordi-black sm:ml-0"
                       >
                         {day.date}
                       </time>
@@ -204,10 +204,10 @@ export function Speakers() {
                         />
                       </div>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-orange-500">
+                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-orange-200">
                       {speaker.name}
                     </h3>
-                    <p className="mt-1 text-base tracking-tight text-jordi-orange-300">
+                    <p className="mt-1 text-base tracking-tight text-jordi-black">
                       {speaker.role}
                     </p>
                   </div>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import backgroundImage from 'public/images/themis.png'
+import backgroundImage from 'public/images/themisOut.svg'
 import hero from '@/data/hero.json'
 
 import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa'
@@ -10,12 +10,12 @@ import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 export function Hero() {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
-      <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-white">
+      <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-jordi-white">
         <Image
-          className="absolute top-0 left-0 translate-y-[-10%] translate-x-[-55%] opacity-80 blur-lg sm:left-1/2 sm:translate-y-[-2%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-105%]"
+          className="absolute top-0 left-0 translate-y-[-15%] translate-x-[-10%] opacity-75 blur-sm sm:left-1/2 sm:translate-y-[-20%] sm:translate-x-[-47%] lg:translate-y-[-62%] lg:translate-x-[-50%] xl:translate-x-[-55%]"
           src={backgroundImage}
           alt=""
-          width={1500}
+          width={10000}
           height={1495}
           priority
           unoptimized

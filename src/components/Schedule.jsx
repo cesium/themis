@@ -118,7 +118,7 @@ function ScheduleTabbed() {
 function DaySummary({ day }) {
   return (
     <>
-      <h3 className="text-xl font-semibold tracking-tight text-jordi-orange-500 sm:text-2xl">
+      <h3 className="text-xl font-semibold tracking-tight text-jordi-orange-400 sm:text-2xl">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
       <p className="mt-1.5 hidden text-sm tracking-tight text-jordi-black lg:flex lg:text-base">
@@ -134,7 +134,7 @@ function TimeSlots({ day, className }) {
       role="list"
       className={clsx(
         className,
-        'shadow-secondary/5 space-y-8 bg-jordi-beige/60 py-14 px-10 text-center shadow-xl backdrop-blur',
+        'shadow-jordi-beige/10 space-y-8 bg-jordi-beige/40 py-14 px-10 text-center shadow-xl backdrop-blur',
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
@@ -145,7 +145,7 @@ function TimeSlots({ day, className }) {
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
           )}
-          <h4 className="text-lg font-semibold tracking-tight text-jordi-orange-500">
+          <h4 className="text-lg font-semibold tracking-tight text-jordi-orange-300">
             {timeSlot.name}
           </h4>
           {timeSlot.description && (

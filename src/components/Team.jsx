@@ -100,7 +100,7 @@ export function Team() {
                         &lt;
                       </button>
 
-                      <div className="-mt-2 text-center font-mono text-xl text-jordi-orange-400">
+                      <div className="-mt-2 text-center font-mono text-xl text-jordi-orange-300">
                         {team.name}
                       </div>
 
@@ -190,10 +190,10 @@ export function Team() {
                         </a>
                       </div>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-orange-400">
+                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-orange-200">
                       {member.name}
                     </h3>
-                    <p className="mt-1 text-base tracking-tight text-jordi-orange-300">
+                    <p className="mt-1 text-base tracking-tight text-jordi-black">
                       {member.organization}
                     </p>
                   </div>
