@@ -1,8 +1,8 @@
 <h1 align="center">
   <a href="">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="public/images/logoLilas.png">
-      <source media="(prefers-color-scheme: light)" srcset="public/images/logoLilas.png">
+      <source media="(prefers-color-scheme: dark)" srcset="public/images/logoOrange.png">
+      <source media="(prefers-color-scheme: light)" srcset="public/images/logoOrange.png">
       <img alt="jordi" height="auto" width="200px">
     </picture>
   </a>
