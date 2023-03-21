@@ -8,7 +8,7 @@ export function Sponsors() {
     <section
       id="sponsors"
       aria-label="Sponsors"
-      className="bg-gradient-to-b from-jordi-beige-50 py-20 sm:py-32"
+      className="bg-jordi-beige-50 py-20 sm:py-32"
     >
       <Container>
         <h2 className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-jordi-orange-500 sm:text-5xl">
