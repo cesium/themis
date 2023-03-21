@@ -66,18 +66,18 @@ export function Speakers() {
     <section
       id="speakers"
       aria-labelledby="speakers-title"
-      className="bg-black py-20 sm:py-32"
+      className="bg-jordi-beige-50 py-20 sm:py-32"
     >
       <ImageClipPaths id={id} />
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="speakers-title"
-            className="font-display text-4xl font-medium tracking-tighter text-jordi-orange-600 sm:text-5xl"
+            className="font-display text-4xl font-medium tracking-tighter text-jordi-orange-500 sm:text-5xl"
           >
             Oradores
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-white">
+          <p className="mt-4 font-display text-2xl tracking-tight text-jordi-black">
             Learn from the experts on the cutting-edge of deception at the most
             sinister companies.
           </p>
@@ -97,26 +97,26 @@ export function Speakers() {
                   {selectedDateIndex === dayIndex && (
                     <div className="flex w-screen justify-between px-4">
                       <button
-                        className="px-4 font-mono text-4xl text-jordi-orange-600"
+                        className="px-4 font-mono text-4xl text-jordi-orange-500"
                         onClick={handleSelectPrevDateIndex}
                       >
                         &lt;
                       </button>
 
                       <div className="text-center">
-                        <span className="font-mono text-sm text-jordi-purple-300">
+                        <span className="font-mono text-sm text-jordi-orange-400">
                           {day.name}
                         </span>
                         <time
                           dateTime={day.dateTime}
-                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-jordi-orange-600 sm:ml-0"
+                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-jordi-orange-500 sm:ml-0"
                         >
                           {day.date}
                         </time>
                       </div>
 
                       <button
-                        className="px-4 font-mono text-4xl text-jordi-orange-600"
+                        className="px-4 font-mono text-4xl text-jordi-orange-500"
                         onClick={handleSelectNextDateIndex}
                       >
                         &gt;
@@ -140,8 +140,8 @@ export function Speakers() {
                       className={clsx(
                         'absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                         dayIndex === selectedIndex
-                          ? 'fill-jordi-purple-400 stroke-jordi-purple-400'
-                          : 'fill-transparent stroke-jordi-purple-200',
+                          ? 'fill-jordi-orange-400 stroke-jordi-orange-400'
+                          : 'fill-transparent stroke-jordi-orange-300',
                       )}
                     />
                     <div className="relative">
@@ -149,8 +149,8 @@ export function Speakers() {
                         className={clsx(
                           'hidden font-mono text-sm sm:flex',
                           dayIndex === selectedIndex
-                            ? 'text-jordi-purple-400'
-                            : 'text-jordi-purple-200',
+                            ? 'text-jordi-orange-400'
+                            : 'text-jordi-orange-300',
                         )}
                       >
                         <Tab className="[&:not(:focus-visible)]:focus:outline-none">
@@ -160,7 +160,7 @@ export function Speakers() {
                       </div>
                       <time
                         dateTime={day.dateTime}
-                        className="mt-1.5 ml-5 block text-2xl font-semibold tracking-tight text-jordi-purple-200 sm:ml-0"
+                        className="mt-1.5 ml-5 block text-2xl font-semibold tracking-tight text-jordi-orange-300 sm:ml-0"
                       >
                         {day.date}
                       </time>
@@ -184,9 +184,9 @@ export function Speakers() {
                         className={clsx(
                           'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
                           [
-                            'border-jordi-purple-300',
+                            'border-jordi-orange-300',
                             'border-jordi-orange-600',
-                            'border-jordi-purple-200',
+                            'border-jordi-orange-200',
                           ][speakerIndex % 3],
                         )}
                       />
@@ -205,10 +205,10 @@ export function Speakers() {
                         />
                       </div>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-purple-200">
+                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-orange-500">
                       {speaker.name}
                     </h3>
-                    <p className="mt-1 text-base tracking-tight text-white">
+                    <p className="mt-1 text-base tracking-tight text-jordi-orange-300">
                       {speaker.role}
                     </p>
                   </div>
