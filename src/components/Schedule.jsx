@@ -134,7 +134,7 @@ function TimeSlots({ day, className }) {
       role="list"
       className={clsx(
         className,
-        'shadow-jordi-beige/10 space-y-8 bg-jordi-beige/40 py-14 px-10 text-center shadow-xl backdrop-blur',
+        'space-y-8 bg-jordi-beige/40 py-14 px-10 text-center shadow-xl shadow-jordi-beige/10 backdrop-blur',
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (

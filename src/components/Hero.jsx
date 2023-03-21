@@ -10,7 +10,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 export function Hero() {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
-      <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-jordi-white">
+      <div className="bg-jordi-white absolute inset-x-0 -top-48 -bottom-14 overflow-hidden">
         <Image
           className="absolute top-0 left-0 translate-y-[-15%] translate-x-[-10%] opacity-75 blur-sm sm:left-1/2 sm:translate-y-[-20%] sm:translate-x-[-47%] lg:translate-y-[-62%] lg:translate-x-[-50%] xl:translate-x-[-55%]"
           src={backgroundImage}
