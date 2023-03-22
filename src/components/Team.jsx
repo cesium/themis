@@ -66,7 +66,6 @@ export function Team() {
       aria-labelledby="team-title"
       className="bg-gradient-to-t from-black py-20"
     >
-      <ImageClipPaths id={id} />
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
