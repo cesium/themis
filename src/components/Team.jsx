@@ -64,7 +64,7 @@ export function Team() {
     <section
       id="team"
       aria-labelledby="team-title"
-      className="bg-gradient-to-t from-jordi-beige-50 py-20"
+      className="bg-gradient-to-t from-black py-20"
     >
       <ImageClipPaths id={id} />
       <Container>
@@ -75,7 +75,7 @@ export function Team() {
           >
             Equipa
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-jordi-black">
+          <p className="mt-4 font-display text-2xl tracking-tight text-jordi-beige">
             Vem conhecer a equipa que organizou este fantástico evento!
           </p>
         </div>
@@ -130,7 +130,7 @@ export function Team() {
                         'absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                         index === selectedIndex
                           ? 'fill-jordi-orange-400 stroke-jordi-orange-400'
-                          : 'fill-transparent stroke-jordi-orange-300',
+                          : 'fill-transparent stroke-jordi-beige-50',
                       )}
                     />
                     <div className="relative">
@@ -139,7 +139,7 @@ export function Team() {
                           'hidden font-mono text-sm sm:flex',
                           index === selectedIndex
                             ? 'text-jordi-orange-400'
-                            : 'text-jordi-orange-300',
+                            : 'text-jordi-beige-50',
                         )}
                       >
                         <Tab className="[&:not(:focus-visible)]:focus:outline-none">
@@ -193,7 +193,7 @@ export function Team() {
                     <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-orange-200">
                       {member.name}
                     </h3>
-                    <p className="mt-1 text-base tracking-tight text-jordi-black">
+                    <p className="mt-1 text-base tracking-tight text-jordi-beige">
                       {member.organization}
                     </p>
                   </div>

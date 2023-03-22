@@ -5,7 +5,7 @@ import organizers from '@/data/organization.json'
 
 export function Organization() {
   return (
-    <div className="bg-gradient-to-b from-jordi-beige-50 py-16">
+    <div className="bg-gradient-to-b from-black py-16">
       <Container className="flex flex-col items-center justify-center gap-10">
         <h2
           id="speakers-title"

@@ -69,7 +69,6 @@ module.exports = {
           900: '#110500',
         },
         'jordi-black': '#181818',
-        'jordi-green': '#557638',
       },
     },
   },

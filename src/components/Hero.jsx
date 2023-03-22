@@ -10,9 +10,9 @@ import { FaGithub, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 export function Hero() {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
-      <div className="bg-jordi-white absolute inset-x-0 -top-48 -bottom-14 overflow-hidden">
+      <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-jordi-black">
         <Image
-          className="absolute top-0 left-0 translate-y-[-15%] translate-x-[-10%] opacity-75 blur-sm sm:left-1/2 sm:translate-y-[-20%] sm:translate-x-[-47%] lg:translate-y-[-62%] lg:translate-x-[-50%] xl:translate-x-[-55%]"
+          className="absolute top-0 left-0 translate-y-[-2%] translate-x-[10%] opacity-75 blur-sm sm:blur-md sm:left-1/2 sm:translate-y-[-30%] sm:translate-x-[-47%] lg:translate-y-[-62%] lg:translate-x-[-50%] xl:translate-x-[-55%]"
           src={backgroundImage}
           alt=""
           width={10000}
@@ -20,8 +20,8 @@ export function Hero() {
           priority
           unoptimized
         />
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-jordi-beige-50" />
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black" />
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
@@ -29,7 +29,7 @@ export function Hero() {
             <span className="sr-only">Jordi </span>Jornadas de Direito e
             Informática
           </h1>
-          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-jordi-black">
+          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-jordi-beige">
             <p>
               <i>With great technology comes great responsibility!</i>
             </p>
@@ -58,7 +58,7 @@ export function Hero() {
                 <dt className="font-mono text-sm text-jordi-orange-400">
                   {name}
                 </dt>
-                <dd className="mt-0.5 text-base font-semibold tracking-tight text-jordi-black sm:text-2xl">
+                <dd className="mt-0.5 text-base font-semibold tracking-tight text-jordi-beige sm:text-2xl">
                   {value}
                 </dd>
               </div>
@@ -68,7 +68,7 @@ export function Hero() {
             <h5 className="text-2xl font-bold tracking-tight text-jordi-orange-500">
               Sigam-nos :
             </h5>
-            <div className="mt-4 flex flex-row justify-start">
+            <div className="mt-4 flex flex-row justify-start text-jordi-beige">
               <a
                 className="mr-5 w-5 hover:opacity-50"
                 href="https://github.com/cesium/themis"

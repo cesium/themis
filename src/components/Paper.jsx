@@ -26,10 +26,10 @@ export function Papers() {
     <section
       id="papers"
       aria-label="Papers"
-      className="bg-white py-20 px-4 sm:py-32"
+      className="bg-jordi-black py-20 px-4 sm:py-32"
     >
       <Container>
-        <div className="relative -mx-4 overflow-hidden rounded-xl bg-jordi-beige/60 py-20 px-4 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
+        <div className="relative -mx-4 overflow-hidden rounded-xl bg-black/60 py-20 px-4 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
           <Image
             className="absolute left-1/2 top-0 translate-x-[15%] translate-y-[10%] opacity-90 blur-md lg:translate-x-[-45%] lg:translate-y-[-2%]"
             src={backgroundImage}
@@ -43,7 +43,7 @@ export function Papers() {
               <p className="font-display text-4xl font-medium tracking-tighter text-jordi-orange-500 sm:text-5xl">
                 Call for Papers
               </p>
-              <p className="mt-4 text-lg tracking-tight text-jordi-black">
+              <p className="mt-4 text-lg tracking-tight text-jordi-beige">
                 Tens interesse em Direito Informático? Gostas de escrever?
                 Habilita-te a ganhar prémios incríveis, inclusive a oportunidade
                 de apresentar o teu paper aos participantes da JORDI!
@@ -69,13 +69,13 @@ export function Papers() {
                 </Button>
               </form>
               <div className="mt-16 flex flex-col">
-                <h1 className="text-base font-semibold tracking-tighter text-jordi-orange-600">
+                <h1 className="text-base font-semibold tracking-tighter text-jordi-beige-900">
                   Mais informações{' '}
                   <span className="hidden sm:inline-flex" aria-hidden="true">
                     &darr;
                   </span>
                 </h1>
-                <div className="flex flex-row items-center gap-3 text-jordi-black">
+                <div className="flex flex-row items-center gap-3 text-jordi-beige">
                   <Link
                     passHref
                     className="font-mono text-sm tracking-tighter underline hover:no-underline"
