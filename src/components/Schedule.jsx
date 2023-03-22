@@ -194,7 +194,7 @@ export function Schedule() {
           <h2 className="font-display text-4xl font-medium tracking-tighter text-jordi-orange-500 sm:text-5xl">
             Horário
           </h2>
-          <p className="text-jordi-beige mt-4 font-display text-2xl tracking-tight">
+          <p className="mt-4 font-display text-2xl tracking-tight text-jordi-beige">
             O programa mais completo e interessante que poderias desejar!
           </p>
         </div>

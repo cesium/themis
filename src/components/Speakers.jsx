@@ -77,7 +77,7 @@ export function Speakers() {
           >
             Oradores
           </h2>
-          <p className="text-jordi-beige mt-4 font-display text-2xl tracking-tight">
+          <p className="mt-4 font-display text-2xl tracking-tight text-jordi-beige">
             Conhece algumas das pessoas mais brilhantes da área!
           </p>
         </div>

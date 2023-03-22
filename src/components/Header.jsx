@@ -33,7 +33,7 @@ export function Header() {
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
           <Button
             href="#"
-            className="bg-jordi-orange-500 text-white hover:bg-jordi-orange-400"
+            className="bg-jordi-orange-500 text-jordi-beige hover:bg-jordi-orange-400"
           >
             Inscreve-te
           </Button>

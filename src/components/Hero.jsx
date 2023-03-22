@@ -12,7 +12,7 @@ export function Hero() {
     <div className="relative pt-10 pb-20 sm:py-24">
       <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-jordi-black">
         <Image
-          className="absolute top-0 left-0 translate-y-[-2%] translate-x-[10%] opacity-75 blur-sm sm:blur-md sm:left-1/2 sm:translate-y-[-30%] sm:translate-x-[-47%] lg:translate-y-[-62%] lg:translate-x-[-50%] xl:translate-x-[-55%]"
+          className="absolute top-0 left-0 translate-y-[-2%] translate-x-[10%] opacity-75 blur-sm sm:left-1/2 sm:translate-y-[-30%] sm:translate-x-[-47%] sm:blur-md lg:translate-y-[-62%] lg:translate-x-[-50%] xl:translate-x-[-55%]"
           src={backgroundImage}
           alt=""
           width={10000}
@@ -48,7 +48,7 @@ export function Hero() {
           </div>
           <Button
             href="#"
-            className="mt-10 w-full bg-jordi-orange-500 text-white hover:bg-jordi-orange-400 sm:hidden"
+            className="mt-10 w-full bg-jordi-orange-500 text-jordi-beige hover:bg-jordi-orange-400 sm:hidden"
           >
             Inscreve-te
           </Button>
