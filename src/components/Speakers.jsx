@@ -48,7 +48,7 @@ export function Speakers() {
     <section
       id="speakers"
       aria-labelledby="speakers-title"
-      className="bg-jordi-beige-100 py-20 dark:bg-black sm:py-32"
+      className="bg-jordi-beige-50 py-20 dark:bg-black sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">

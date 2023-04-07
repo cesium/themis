@@ -187,7 +187,7 @@ export function Schedule() {
     <section
       id="schedule"
       aria-label="Schedule"
-      className="bg-jordi-beige-100 py-20 dark:bg-black sm:py-32"
+      className="bg-jordi-beige-50 py-20 dark:bg-black sm:py-32"
     >
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
@@ -209,7 +209,7 @@ export function Schedule() {
             height={1495}
             unoptimized
           />
-          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-jordi-beige-100 dark:from-black" />
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-jordi-beige-50 dark:from-black" />
           <div className="from-jordi-white from white absolute inset-x-0 bottom-0 h-40 dark:bg-jordi-black" />
         </div>
         <Container className="relative">

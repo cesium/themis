@@ -21,7 +21,7 @@ export function Hero() {
           unoptimized
         />
         <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white dark:from-black" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-jordi-beige-100 dark:from-black" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-jordi-beige-50 dark:from-black" />
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">

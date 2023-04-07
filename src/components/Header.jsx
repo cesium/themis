@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react'
 import { MoonIcon, SunIcon } from '@heroicons/react/outline'
 
 export function Header() {
-  const { systemTheme, theme, setTheme } = useTheme()
+  const { systemTheme, theme = 'dark', setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => setMounted(true), [])
