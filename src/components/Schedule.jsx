@@ -121,7 +121,7 @@ function DaySummary({ day }) {
       <h3 className="text-xl font-semibold tracking-tight text-jordi-orange-400 sm:text-2xl">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="mt-1.5 hidden text-sm tracking-tight text-jordi-beige lg:flex lg:text-base">
+      <p className="mt-1.5 hidden text-sm tracking-tight text-jordi-black dark:text-jordi-beige lg:flex lg:text-base">
         {day.summary}
       </p>
     </>
@@ -134,7 +134,7 @@ function TimeSlots({ day, className }) {
       role="list"
       className={clsx(
         className,
-        'space-y-8 bg-black/60 py-14 px-10 text-center shadow-xl shadow-black/10 backdrop-blur',
+        'space-y-8 bg-jordi-beige/60 py-14 px-10 text-center shadow-xl shadow-black/10 backdrop-blur dark:bg-black/60',
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
@@ -149,11 +149,11 @@ function TimeSlots({ day, className }) {
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-jordi-beige-200">
+            <p className="mt-1 tracking-tight text-jordi-black dark:text-jordi-beige-200">
               {timeSlot.description}
             </p>
           )}
-          <p className="mt-1 font-mono text-sm text-jordi-beige-900">
+          <p className="mt-1 font-mono text-sm text-jordi-orange-400 dark:text-jordi-beige-900">
             <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
               {timeSlot.start}
             </time>{' '}
@@ -187,20 +187,20 @@ export function Schedule() {
     <section
       id="schedule"
       aria-label="Schedule"
-      className="bg-black py-20 sm:py-32"
+      className="bg-jordi-beige-100 py-20 dark:bg-black sm:py-32"
     >
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-jordi-orange-500 sm:text-5xl">
             Horário
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-jordi-beige">
+          <p className="mt-4 font-display text-2xl tracking-tight text-jordi-black dark:text-jordi-beige">
             O programa mais completo e interessante que poderias desejar!
           </p>
         </div>
       </Container>
       <div className="relative mt-14 sm:mt-24">
-        <div className="absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-jordi-black">
+        <div className="absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-white dark:bg-jordi-black">
           <Image
             className="absolute left-full top-0 -translate-x-1/2 -scale-x-100 opacity-80 blur-md sm:left-1/2 sm:translate-y-[-15%] sm:translate-x-[-20%] md:translate-x-0 lg:translate-x-[5%] lg:translate-y-[4%] xl:translate-y-[-3%] xl:translate-x-[-7%]"
             src={backgroundImage}
@@ -209,8 +209,8 @@ export function Schedule() {
             height={1495}
             unoptimized
           />
-          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black" />
-          <div className="from-jordi-white absolute inset-x-0 bottom-0 h-40 bg-jordi-black" />
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-jordi-beige-100 dark:from-black" />
+          <div className="from-jordi-white from white absolute inset-x-0 bottom-0 h-40 dark:bg-jordi-black" />
         </div>
         <Container className="relative">
           <ScheduleTabbed />

@@ -1,12 +1,14 @@
 [
   {
     "name": "CeSIUM",
-    "logo": "CeSIUM-icon.svg",
+    "logol": "CeSIUM-icon.svg",
+    "logo": "CeSIUM-icon-light.svg",
     "site": "https://cesium.di.uminho.pt/"
   },
   {
     "name": "ELSA",
-    "logo": "ELSA.png",
+    "logol": "ELSA.png",
+    "logo": "ELSA-light.png",
     "site": "/"
   }
 ]

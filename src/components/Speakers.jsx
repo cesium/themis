@@ -48,7 +48,7 @@ export function Speakers() {
     <section
       id="speakers"
       aria-labelledby="speakers-title"
-      className="bg-black py-20 sm:py-32"
+      className="bg-jordi-beige-100 py-20 dark:bg-black sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
@@ -58,7 +58,7 @@ export function Speakers() {
           >
             Oradores
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-jordi-beige">
+          <p className="mt-4 font-display text-2xl tracking-tight text-jordi-black dark:text-jordi-beige">
             Conhece algumas das pessoas mais brilhantes da área!
           </p>
         </div>
@@ -89,7 +89,7 @@ export function Speakers() {
                         </span>
                         <time
                           dateTime={day.dateTime}
-                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-jordi-beige sm:ml-0"
+                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-jordi-orange dark:text-jordi-beige sm:ml-0"
                         >
                           {day.date}
                         </time>
@@ -120,8 +120,8 @@ export function Speakers() {
                       className={clsx(
                         'absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                         dayIndex === selectedIndex
-                          ? 'fill-jordi-orange-400 stroke-jordi-orange-400'
-                          : 'fill-transparent stroke-jordi-beige-50',
+                          ? 'fill-jordi-orange-400 stroke-jordi-orange'
+                          : 'fill-transparent stroke-jordi-orange-400 dark:stroke-jordi-beige-50',
                       )}
                     />
                     <div className="relative">
@@ -129,8 +129,8 @@ export function Speakers() {
                         className={clsx(
                           'hidden font-mono text-sm sm:flex',
                           dayIndex === selectedIndex
-                            ? 'text-jordi-orange-400'
-                            : 'text-jordi-beige-50',
+                            ? 'text-jordi-orange'
+                            : 'text-jordi-orange-400 dark:text-jordi-beige-50',
                         )}
                       >
                         <Tab className="[&:not(:focus-visible)]:focus:outline-none">
@@ -140,7 +140,7 @@ export function Speakers() {
                       </div>
                       <time
                         dateTime={day.dateTime}
-                        className="mt-1.5 ml-5 block text-2xl font-semibold tracking-tight text-jordi-beige sm:ml-0"
+                        className="mt-1.5 ml-5 block text-2xl font-semibold tracking-tight text-jordi-orange sm:ml-0"
                       >
                         {day.date}
                       </time>
@@ -185,10 +185,10 @@ export function Speakers() {
                         />
                       </div>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-orange-200">
+                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-orange-400 dark:text-jordi-orange-200">
                       {speaker.name}
                     </h3>
-                    <p className="mt-1 text-base tracking-tight text-slate-100">
+                    <p className="mt-1 text-base tracking-tight text-jordi-black dark:text-white">
                       {speaker.role}
                     </p>
                   </div>
