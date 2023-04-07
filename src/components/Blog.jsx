@@ -14,7 +14,7 @@ function ShowPaper({ paper }) {
   }
 
   return (
-    <div className="mb-6 space-y-8 rounded-2xl bg-jordi-beige/60 py-14 px-10 text-start shadow-xl shadow-black/5 backdrop-blur dark:bg-jordi-black/60">
+    <div className="mb-6 space-y-8 rounded-2xl bg-jordi-beige/60 py-14 px-10 text-start shadow-xl shadow-black/5 backdrop-blur dark:bg-black/60">
       <p className="text-xl font-semibold tracking-tight text-jordi-orange-500">
         {paper.author}
       </p>
