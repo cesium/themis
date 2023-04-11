@@ -23,21 +23,16 @@ export function Sponsors() {
               key={sponsor.name}
               className="flex items-center justify-center"
             >
-              {theme === 'dark' ? (
-                <Image
-                  src={`/images/logos/${theme === 'dark' ? sponsor.logo : sponsor.logo_light ?? sponsor.logo}`}
-                  alt={sponsor.name}
-                  height={120}
-                  width={150}
-                />
-              ) : (
-                <Image
-                  src={`/images/logos/${sponsor.logo}`}
-                  alt={sponsor.name}
-                  height={120}
-                  width={150}
-                />
-              )}
+              <Image
+                src={`/images/logos/${
+                  theme === 'dark'
+                    ? sponsor.logo
+                    : sponsor.logo_light ?? sponsor.logo
+                }`}
+                alt={sponsor.name}
+                height={120}
+                width={150}
+              />
             </div>
           ))}
         </div>
