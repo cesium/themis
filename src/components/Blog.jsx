@@ -37,7 +37,7 @@ function ShowPaper({ paper }) {
         {paper.summary}
       </p>
       <Button
-        className="mx-[40%] bg-jordi-orange-500 text-white"
+        className="mx-auto bg-jordi-orange-500 text-white"
         onClick={handleToggle}
       >
         {open ? 'Mostrar menos' : 'Mostrar mais'}
