@@ -30,7 +30,7 @@ export function Organization() {
                 ) : (
                   <Image
                     className="hover:opacity-80"
-                    src={`/images/organization/${organization.logol}`}
+                    src={`/images/organization/${organization.logo_light}`}
                     alt={organization.name}
                     height={80}
                     width={125}
