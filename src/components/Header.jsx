@@ -16,24 +16,19 @@ export function Header() {
 
   const renderThemeChanger = () => {
     if (!mounted) return null
-
     const currentTheme = theme === 'system' ? systemTheme : theme
 
-    if (currentTheme === 'dark') {
-      return (
-        <SunIcon
-          className="mt-8 ml-5 h-14 w-14 items-center justify-center rounded-2xl bg-jordi-orange-500 p-1 text-jordi-beige sm:mt-0 sm:ml-5"
-          onClick={() => setTheme('light')}
-        />
-      )
-    } else {
-      return (
-        <MoonIcon
-          className="mt-8 ml-5 h-14 w-14 items-center justify-center rounded-2xl bg-jordi-orange-500 p-1 text-jordi-beige sm:mt-0 sm:ml-5"
-          onClick={() => setTheme('dark')}
-        />
-      )
-    }
+    return currentTheme === 'dark' ? (
+      <SunIcon
+        className="mt-8 ml-5 h-14 w-14 cursor-pointer items-center justify-center rounded-2xl bg-jordi-orange-500 p-1 text-jordi-beige hover:bg-jordi-orange-400 sm:mt-0 sm:ml-5"
+        onClick={() => setTheme('light')}
+      />
+    ) : (
+      <MoonIcon
+        className="mt-8 ml-5 h-14 w-14 cursor-pointer items-center justify-center rounded-2xl bg-jordi-orange-500 p-1 text-jordi-beige hover:bg-jordi-orange-400 sm:mt-0 sm:ml-5"
+        onClick={() => setTheme('dark')}
+      />
+    )
   }
 
   return (
