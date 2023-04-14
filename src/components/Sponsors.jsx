@@ -25,7 +25,7 @@ export function Sponsors() {
             >
               <Image
                 src={`/images/logos/${
-                  theme === 'dark'
+                  currentTheme === 'dark'
                     ? sponsor.logo
                     : sponsor.logo_light ?? sponsor.logo
                 }`}
