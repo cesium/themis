@@ -4,7 +4,8 @@ import { Container } from '@/components/Container'
 import organizers from '@/data/organization.json'
 
 export function Organization() {
-  const { theme } = useTheme()
+  const { systemTheme, theme = 'dark' } = useTheme()
+  const currentTheme = theme === 'system' ? systemTheme : theme
 
   return (
     <div className="bg-gradient-to-b from-jordi-beige-100 py-16 dark:from-black">
