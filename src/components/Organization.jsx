@@ -19,23 +19,13 @@ export function Organization() {
           {organizers.map((organization) => (
             <div key={organization.name}>
               <a href={organization.site}>
-                {theme === 'dark' ? (
-                  <Image
+               <Image
                     className="hover:opacity-80"
-                    src={`/images/organization/${organization.logo}`}
+                    src={`/images/organization/${currentTheme === 'dark' ? organization.logo : organization.logo_light ?? organization.logo}`}
                     alt={organization.name}
                     height={80}
                     width={125}
                   />
-                ) : (
-                  <Image
-                    className="hover:opacity-80"
-                    src={`/images/organization/${organization.logo_light}`}
-                    alt={organization.name}
-                    height={80}
-                    width={125}
-                  />
-                )}
               </a>
             </div>
           ))}
