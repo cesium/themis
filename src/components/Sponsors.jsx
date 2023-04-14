@@ -5,7 +5,8 @@ import { Container } from '@/components/Container'
 import sponsors from '@/data/sponsors.json'
 
 export function Sponsors() {
-  const { theme } = useTheme()
+  const { systemTheme, theme = 'dark' } = useTheme()
+  const currentTheme = theme === 'system' ? systemTheme : theme
 
   return (
     <section
