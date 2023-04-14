@@ -22,37 +22,31 @@
       {
         "name": "Enzo Vieira",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "enzovieira.jpg",
         "social": "https://github.com/EnzoVieira"
       },
       {
         "name": "Filipe Felício",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "filipefelicio.jpg",
         "social": "https://github.com/feliciofilipe"
       },
       {
         "name": "Mário Rodrigues",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "mariorodrigues.jpg",
         "social": "https://github.com/marioRodrigues10"
       },
       {
         "name": "Rui Lopes",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "ruilopes.jpg",
         "social": "https://github.com/RuiL1904"
-      },
-      {
-        "name": "Rui Oliveira",
-        "organization": "CeSIUM",
-        "image": "default.jpg",
-        "social": "https://github.com/ruioliveira02"
       },
       {
         "name": "Tiago Bacelar",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "default.png",
         "social": "https://github.com/tiago-bacelar"
       }
     ]
@@ -63,31 +57,31 @@
       {
         "name": "Adriana Frazão",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "adrianafrazao.jpg",
         "social": "https://github.com/AdrianaBot"
       },
       {
         "name": "Bruna Lima",
         "organization": "ELSA",
-        "image": "default.jpg",
+        "image": "brunalima.jpg",
         "social": "https://www.linkedin.com/in/bruna-lima-9a639b248/"
       },
       {
         "name": "Francisco Neves",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "francisconeves.jpg",
         "social": "https://github.com/franl08"
       },
       {
         "name": "Gustavo Pereira",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "gustavopereira.jpg",
         "social": "https://github.com/cgustavop"
       },
       {
         "name": "Joana Branco",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "joanabranco.jpg",
         "social": "https://www.linkedin.com/in/joana-branco-73v"
       }
     ]
@@ -98,13 +92,13 @@
       {
         "name": "João Sá",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "joaosa.jpeg",
         "social": "https://github.com/joaosa24"
       },
       {
         "name": "Pedro Pereira",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "pedropereira.jpg",
         "social": "https://github.com/pedrofp4444"
       }
     ]
@@ -115,37 +109,37 @@
       {
         "name": "Ana Lira",
         "organization": "ELSA",
-        "image": "default.jpg",
+        "image": "analira.jpg",
         "social": "https://www.linkedin.com/in/ana-lira-b2678b139"
       },
       {
         "name": "Carolina Costa",
         "organization": "ELSA",
-        "image": "default.jpg",
+        "image": "carolinacosta.jpeg",
         "social": "https://www.linkedin.com/in/carolina-costa-6180b126b"
       },
       {
         "name": "Diana Gusmão",
         "organization": "ELSA",
-        "image": "default.jpg",
+        "image": "dianagusmao.jpeg",
         "social": "https://www.linkedin.com/in/diana-gusmão-23111b1a2"
       },
       {
         "name": "Hélder Gomes",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "heldergomes.jpg",
         "social": "https://github.com/helderrrg"
       },
       {
         "name": "Leonardo Freitas",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "leonardofreitas.jpg",
         "social": "https://www.linkedin.com/in/leonardo-araújo-freitas-734732228"
       },
       {
         "name": "Rafael Ferreira",
         "organization": "CeSIUM",
-        "image": "default.jpg",
+        "image": "rafaelferreira.jpg",
         "social": "https://www.linkedin.com/in/rafael-ferreira-52618521a/"
       }
     ]

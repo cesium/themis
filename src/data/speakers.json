@@ -1,112 +1,97 @@
 [
   {
-    "name": "Dia de abertura",
+    "name": "Segunda-Feira",
     "date": "Abril 17",
     "dateTime": "2023-04-17",
     "speakers": [
+      {
+        "name": "Fábio Rego",
+        "role": "Advogado",
+        "image": "defauld.png"
+      },
+      {
+        "name": "José Gomes",
+        "role": "CEO da Finiam",
+        "image": "jose-gomes.jpg"
+      },
       {
         "name": "José Peixoto",
         "role": "Júnior Developer",
         "image": "jose-peixoto.jpg"
       },
       {
-        "name": "Jaquelin Isch",
-        "role": "UX Design at InGen",
-        "image": "jaquelin-isch.jpg"
-      },
-      {
-        "name": "Dianne Guilianelli",
-        "role": "General Manager at Initech",
-        "image": "dianne-guilianelli.jpg"
-      },
-      {
-        "name": "Ronni Cantadore",
-        "role": "Design Engineer at Weyland-Yutani",
-        "image": "ronni-cantadore.jpg"
-      },
-      {
-        "name": "Erhart Cockrin",
-        "role": "Product Lead at Cyberdyne Systems",
-        "image": "erhart-cockrin.jpg"
-      },
-      {
-        "name": "Parker Johnson",
-        "role": "UI Designer at MomCorp",
-        "image": "parker-johnson.jpg"
+        "name": "Luís Bravo",
+        "role": "Notário",
+        "image": "luis-bravo.jpg"
       }
     ]
   },
   {
-    "name": "Blockchain",
+    "name": "Terça-feira",
     "date": "Abril 18",
     "dateTime": "2023-04-18",
     "speakers": [
       {
-        "name": "Damaris Kimura",
-        "role": "Senior Engineer at OCP",
-        "image": "damaris-kimura.jpg"
+        "name": "Diogo Mendes Peixoto",
+        "role": "Advogado da Nova Legal",
+        "image": "diogo-mendes.jpg"
       },
       {
-        "name": "Ibrahim Frasch",
-        "role": "Programmer at Umbrella Corp",
-        "image": "ibrahim-frasch.jpg"
+        "name": "Gonçalo Caeiro",
+        "role": "Co-Founder da Joyn GRoup",
+        "image": "goncalo-caeiro.jpg"
       },
       {
-        "name": "Cathlene Burrage",
-        "role": "Frontend Developer at Buy n Large",
-        "image": "cathlene-burrage.jpg"
+        "name": "Abilio Teles",
+        "role": "Inspetor da Polícia Judiciária",
+        "image": "defauld.png"
       },
       {
-        "name": "Rinaldo Beynon",
-        "role": "Data Scientist at Rekall",
-        "image": "rinaldo-beynon.jpg"
+        "name": "Tiago Cabral",
+        "role": "Professor na Universidade do Minho",
+        "image": "tiago-cabral.jpg"
       },
       {
-        "name": "Waylon Hyden",
-        "role": "DevOps at RDA Corporation",
-        "image": "waylon-hyden.jpg"
+        "name": "Vânia Pereia",
+        "role": "Advogada da NFS Advogados",
+        "image": "vania-pereira.jpg"
       },
       {
-        "name": "Giordano Sagucio",
-        "role": "Game Developer at Soylent Corp",
-        "image": "giordano-sagucio.jpg"
+        "name": "Henrique Pereira",
+        "role": "Diretor do Pedagogico @ CeSIUM",
+        "image": "defauld.png"
       }
     ]
   },
   {
-    "name": "Dia de abertura",
+    "name": "Quarta-feira",
     "date": "Abril 19",
     "dateTime": "2023-04-19",
     "speakers": [
       {
-        "name": "Steven Mchail",
-        "role": "Designer at Globex Corporation",
-        "image": "steven-mchail.jpg"
+        "name": "Tiago Branco Costa",
+        "role": "Professor na Universidade do Minho",
+        "image": "tiago-branco.jpg"
       },
       {
-        "name": "Jaquelin Isch",
-        "role": "UX Design at InGen",
-        "image": "jaquelin-isch.jpg"
+        "name": "Leandra Dias",
+        "role": "Jurista na Cegid",
+        "image": "leandra-dias.jpg"
       },
       {
-        "name": "Dianne Guilianelli",
-        "role": "General Manager at Initech",
-        "image": "dianne-guilianelli.jpg"
+        "name": "Francisco Andrade",
+        "role": "Professor na Universidade do Minho",
+        "image": "francisco-andrade.jpg"
       },
       {
-        "name": "Ronni Cantadore",
-        "role": "Design Engineer at Weyland-Yutani",
-        "image": "ronni-cantadore.jpg"
+        "name": "Eva Sónia Moreira",
+        "role": "Professor na Universidade do Minho",
+        "image": "eva-sonia.jpg"
       },
       {
-        "name": "Erhart Cockrin",
-        "role": "Product Lead at Cyberdyne Systems",
-        "image": "erhart-cockrin.jpg"
-      },
-      {
-        "name": "Parker Johnson",
-        "role": "UI Designer at MomCorp",
-        "image": "parker-johnson.jpg"
+        "name": "Paulo Novais",
+        "role": "Professor na Universidade do Minho",
+        "image": "paulo-novais.jpg"
       }
     ]
   }

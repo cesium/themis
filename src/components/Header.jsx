@@ -57,7 +57,7 @@ export function Header() {
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
           <Button
-            href="#"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdfQGGp45c_luUpHSBMgXgZwvfN7OXsDrj08gmzj_kRKQdHQA/viewform"
             className="bg-jordi-orange-500 text-jordi-beige hover:bg-jordi-orange-400"
           >
             Inscreve-te

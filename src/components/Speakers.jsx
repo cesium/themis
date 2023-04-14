@@ -120,8 +120,8 @@ export function Speakers() {
                       className={clsx(
                         'absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                         dayIndex === selectedIndex
-                          ? 'fill-jordi-orange-400 stroke-jordi-orange'
-                          : 'fill-transparent stroke-jordi-orange-400 dark:stroke-jordi-beige-50',
+                          ? 'fill-jordi-orange-400 stroke-jordi-orange dark:stroke-jordi-beige-50 dark:fill-jordi-beige-50'
+                          : 'fill-transparent stroke-jordi-orange-400',
                       )}
                     />
                     <div className="relative">
@@ -129,8 +129,8 @@ export function Speakers() {
                         className={clsx(
                           'hidden font-mono text-sm sm:flex',
                           dayIndex === selectedIndex
-                            ? 'text-jordi-orange'
-                            : 'text-jordi-orange-400 dark:text-jordi-beige-50',
+                            ? 'text-jordi-orange dark:text-jordi-beige-50'
+                            : 'text-jordi-orange-400 ',
                         )}
                       >
                         <Tab className="[&:not(:focus-visible)]:focus:outline-none">

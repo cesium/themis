@@ -52,7 +52,7 @@ export function Papers() {
             <div className="flex flex-col items-center gap-10">
               <form>
                 <h3 className="inline-block text-lg font-semibold tracking-tight text-jordi-orange-500 sm:block">
-                  Submete o Paper aqui{' '}
+                  Veja os vencedores{' '}
                   <span className="hidden sm:inline-flex" aria-hidden="true">
                     &darr;
                   </span>
@@ -60,9 +60,9 @@ export function Papers() {
                 <Button
                   type="submit"
                   className="ml-5 mt-2 bg-jordi-orange-500 text-white sm:ml-24"
-                  href="/"
+                  href="/papers"
                 >
-                  <span className="sr-only sm:not-sr-only">Submissão</span>
+                  <span className="sr-only sm:not-sr-only">Vencedores</span>
                   <span className="sm:hidden">
                     <ArrowRightIcon className="h-6 w-6" />
                   </span>
@@ -79,7 +79,7 @@ export function Papers() {
                   <Link
                     passHref
                     className="font-mono text-sm tracking-tighter underline hover:no-underline"
-                    href="/"
+                    href="https://d1fdloi71mui9q.cloudfront.net/wJG5VEgPSdGiozWbHqyh_Regulamento%20Geral%20JORDI%E2%80%9923.pdf"
                   >
                     Regulamentação
                   </Link>
