@@ -120,7 +120,7 @@ export function Speakers() {
                       className={clsx(
                         'absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                         dayIndex === selectedIndex
-                          ? 'fill-jordi-orange-400 stroke-jordi-orange dark:stroke-jordi-beige-50 dark:fill-jordi-beige-50'
+                          ? 'fill-jordi-orange-400 stroke-jordi-orange dark:fill-jordi-beige-50 dark:stroke-jordi-beige-50'
                           : 'fill-transparent stroke-jordi-orange-400',
                       )}
                     />
