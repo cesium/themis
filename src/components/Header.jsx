@@ -9,10 +9,23 @@ import { useState, useEffect } from 'react'
 import { MoonIcon, SunIcon } from '@heroicons/react/outline'
 
 export function Header() {
-  const { systemTheme, theme = 'dark', setTheme } = useTheme()
+  const { systemTheme, theme = 'light', setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => setMounted(true), [])
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme')
+    if (storedTheme) {
+      setTheme(storedTheme)
+    }
+  })
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(newTheme)
+    localStorage.setItem('theme', newTheme)
+  }
 
   const renderThemeChanger = () => {
     if (!mounted) return null
@@ -21,12 +34,12 @@ export function Header() {
     return currentTheme === 'dark' ? (
       <SunIcon
         className="mt-8 ml-5 h-14 w-14 cursor-pointer items-center justify-center rounded-2xl bg-jordi-orange-500 p-1 text-jordi-beige hover:bg-jordi-orange-400 sm:mt-0 sm:ml-5"
-        onClick={() => setTheme('light')}
+        onClick={() => toggleTheme()}
       />
     ) : (
       <MoonIcon
         className="mt-8 ml-5 h-14 w-14 cursor-pointer items-center justify-center rounded-2xl bg-jordi-orange-500 p-1 text-jordi-beige hover:bg-jordi-orange-400 sm:mt-0 sm:ml-5"
-        onClick={() => setTheme('dark')}
+        onClick={() => toggleTheme()}
       />
     )
   }

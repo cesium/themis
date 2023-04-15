@@ -1,11 +1,20 @@
 import { useTheme } from 'next-themes'
+import { useEffect } from 'react'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
 import organizers from '@/data/organization.json'
 
 export function Organization() {
-  const { systemTheme, theme = 'dark' } = useTheme()
-  const currentTheme = theme === 'system' ? systemTheme : theme
+  const { systemTheme, theme = 'light', setTheme } = useTheme()
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme')
+    if (storedTheme) {
+      setTheme(storedTheme)
+    }
+  })
+
+  const currentTheme = theme
 
   return (
     <div className="bg-gradient-to-b from-jordi-beige-100 py-16 dark:from-black">
@@ -20,17 +29,27 @@ export function Organization() {
           {organizers.map((organization) => (
             <div key={organization.name}>
               <a href={organization.site}>
-                <Image
-                  className="hover:opacity-80"
-                  src={`/images/organization/${
-                    currentTheme === 'dark'
-                      ? organization.logo
-                      : organization.logo_light
-                  }`}
-                  alt={organization.name}
-                  height={80}
-                  width={125}
-                />
+                {currentTheme == 'dark' ? (
+                  <>
+                    <Image
+                      src={`/images/organization/${organization.logo}`}
+                      alt={organization.name}
+                      height={120}
+                      width={150}
+                    />
+                    <p className="hidden">{organization.logo}</p>
+                  </>
+                ) : (
+                  <>
+                    <Image
+                      src={`/images/organization/${organization.logo_light}`}
+                      alt={organization.name}
+                      height={120}
+                      width={150}
+                    />
+                    <p className="hidden">{organization.logo_light}</p>
+                  </>
+                )}
               </a>
             </div>
           ))}

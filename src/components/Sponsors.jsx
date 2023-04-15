@@ -1,13 +1,20 @@
 import Image from 'next/image'
 import { useTheme } from 'next-themes'
-
+import { useEffect } from 'react'
 import { Container } from '@/components/Container'
 import sponsors from '@/data/sponsors.json'
 
 export function Sponsors() {
-  const { systemTheme, theme = 'dark' } = useTheme()
-  const currentTheme = theme === 'system' ? systemTheme : theme
+  const { systemTheme, theme = 'light', setTheme } = useTheme()
 
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme')
+    if (storedTheme) {
+      setTheme(storedTheme)
+    }
+  })
+
+  const currentTheme = theme === 'system' ? systemTheme : theme
   return (
     <section
       id="sponsors"
