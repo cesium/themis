@@ -87,7 +87,7 @@ export function Hero() {
               </a>
               <a
                 className="mr-5 w-5 hover:opacity-50"
-                href="https://www.instagram.com/jordiuminho"
+                href="https://www.linkedin.com/company/jordiuminho/"
                 target="_blank"
                 rel="noreferrer"
               >
