@@ -26,9 +26,7 @@ export function Sponsors() {
             >
               <Image
                 src={`/images/logos/${
-                  currentTheme === 'dark'
-                    ? sponsor.logo
-                    : sponsor.logo_light ?? sponsor.logo
+                  currentTheme === 'dark' ? sponsor.logo : sponsor.logo_light
                 }`}
                 alt={sponsor.name}
                 height={120}

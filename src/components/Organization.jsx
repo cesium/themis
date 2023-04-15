@@ -25,7 +25,7 @@ export function Organization() {
                   src={`/images/organization/${
                     currentTheme === 'dark'
                       ? organization.logo
-                      : organization.logo_light ?? organization.logo
+                      : organization.logo_light
                   }`}
                   alt={organization.name}
                   height={80}
