@@ -125,6 +125,12 @@
         "social": "https://www.linkedin.com/in/diana-gusmão-23111b1a2"
       },
       {
+        "name": "Filipa Ribeiro",
+        "organization": "Vision Legal Lab",
+        "image": "filiparibeiro.jpg",
+        "social": "https://www.linkedin.com/in/ana-filipa-ribeiro-247716210/"
+      },
+      {
         "name": "Hélder Gomes",
         "organization": "CeSIUM",
         "image": "heldergomes.jpg",
@@ -141,12 +147,6 @@
         "organization": "CeSIUM",
         "image": "rafaelferreira.jpg",
         "social": "https://www.linkedin.com/in/rafael-ferreira-52618521a/"
-      },
-      {
-        "name": "Filipa Ribeiro",
-        "organization": "Vision Legal Lab",
-        "image": "default.png",
-        "social": "https://www.linkedin.com/in/ana-filipa-ribeiro-247716210/"
       }
     ]
   }

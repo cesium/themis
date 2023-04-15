@@ -1,8 +1,7 @@
 import { Container } from '@/components/Container'
 import Logo from 'public/images/logo.svg'
-import Engenharia from 'public/images/engenharia.png'
-import Direito from 'public/images/direito.jpg'
 import Image from 'next/image'
+import footer from '@/data/footer.json'
 
 export function Footer() {
   return (
@@ -23,24 +22,19 @@ export function Footer() {
             Parceiros:
           </h5>
           <div className="flx-row flex gap-5">
-            <Image
-              className="h-14 w-auto text-slate-900 opacity-70 hover:opacity-100"
-              src={Engenharia}
-              alt=""
-              width={75}
-              height={50}
-              priority
-              unoptimized
-            />
-            <Image
-              className="h-14 w-auto text-slate-900 opacity-70 hover:opacity-100"
-              src={Direito}
-              alt=""
-              width={50}
-              height={50}
-              priority
-              unoptimized
-            />
+            {footer.map((sponsor) => (
+              <div
+                key={sponsor.name}
+                className="flex items-center justify-center opacity-70 hover:opacity-100"
+              >
+                <Image
+                  src={`/images/${sponsor.logo}`}
+                  alt={sponsor.name}
+                  height={75}
+                  width={100}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </Container>
