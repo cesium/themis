@@ -47,7 +47,7 @@ export function Hero() {
             </p>
           </div>
           <Button
-            href="#"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdfQGGp45c_luUpHSBMgXgZwvfN7OXsDrj08gmzj_kRKQdHQA/viewform"
             className="mt-10 w-full bg-jordi-orange-500 text-jordi-beige hover:bg-jordi-orange-400 sm:hidden"
           >
             Inscreve-te
