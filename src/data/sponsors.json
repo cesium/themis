@@ -1,5 +1,1 @@
-[
-  { "name": "Transistor", "logo": "transistor.svg" },
-  { "name": "Tuple", "logo": "tuple.svg" },
-  { "name": "StaticKit", "logo": "statickit.svg" }
-]
+[{ "name": "Joyn Group", "logo": "joyn-light.svg", "logo_light": "joyn.svg" }]

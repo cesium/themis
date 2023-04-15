@@ -8,24 +8,6 @@ import { DiamondIcon } from '@/components/DiamondIcon'
 
 import days from '@/data/speakers.json'
 
-function ImageClipPaths({ id, ...props }) {
-  return (
-    <svg aria-hidden="true" width={0} height={0} {...props}>
-      <defs>
-        <clipPath id={`${id}-0`} clipPathUnits="objectBoundingBox">
-          <path d="M0,0 h0.729 v0.129 h0.121 l-0.016,0.032 C0.815,0.198,0.843,0.243,0.885,0.243 H1 v0.757 H0.271 v-0.086 l-0.121,0.057 v-0.214 c0,-0.032,-0.026,-0.057,-0.057,-0.057 H0 V0" />
-        </clipPath>
-        <clipPath id={`${id}-1`} clipPathUnits="objectBoundingBox">
-          <path d="M1,1 H0.271 v-0.129 H0.15 l0.016,-0.032 C0.185,0.802,0.157,0.757,0.115,0.757 H0 V0 h0.729 v0.086 l0.121,-0.057 v0.214 c0,0.032,0.026,0.057,0.057,0.057 h0.093 v0.7" />
-        </clipPath>
-        <clipPath id={`${id}-2`} clipPathUnits="objectBoundingBox">
-          <path d="M1,0 H0.271 v0.129 H0.15 l0.016,0.032 C0.185,0.198,0.157,0.243,0.115,0.243 H0 v0.757 h0.729 v-0.086 l0.121,0.057 v-0.214 c0,-0.032,0.026,-0.057,0.057,-0.057 h0.093 V0" />
-        </clipPath>
-      </defs>
-    </svg>
-  )
-}
-
 export function Speakers() {
   let id = useId()
   let [tabOrientation, setTabOrientation] = useState('horizontal')
@@ -66,18 +48,17 @@ export function Speakers() {
     <section
       id="speakers"
       aria-labelledby="speakers-title"
-      className="bg-black py-20 sm:py-32"
+      className="bg-jordi-beige-50 py-20 dark:bg-black sm:py-32"
     >
-      <ImageClipPaths id={id} />
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="speakers-title"
-            className="font-display text-4xl font-medium tracking-tighter text-jordi-orange-600 sm:text-5xl"
+            className="font-display text-4xl font-medium tracking-tighter text-jordi-orange-500 sm:text-5xl"
           >
             Oradores
           </h2>
-          <p className="text-secondary mt-4 font-display text-2xl tracking-tight">
+          <p className="mt-4 font-display text-2xl tracking-tight text-jordi-black dark:text-jordi-beige">
             Conhece algumas das pessoas mais brilhantes da área!
           </p>
         </div>
@@ -96,26 +77,26 @@ export function Speakers() {
                   {selectedDateIndex === dayIndex && (
                     <div className="flex w-screen justify-between px-4">
                       <button
-                        className="px-4 font-mono text-4xl text-jordi-orange-600"
+                        className="px-4 font-mono text-4xl text-jordi-orange-500"
                         onClick={handleSelectPrevDateIndex}
                       >
                         &lt;
                       </button>
 
                       <div className="text-center">
-                        <span className="font-mono text-sm text-jordi-purple-300">
+                        <span className="font-mono text-sm text-jordi-orange-400">
                           {day.name}
                         </span>
                         <time
                           dateTime={day.dateTime}
-                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-jordi-orange-600 sm:ml-0"
+                          className="mt-1.5 block text-2xl font-semibold tracking-tight text-jordi-orange dark:text-jordi-beige sm:ml-0"
                         >
                           {day.date}
                         </time>
                       </div>
 
                       <button
-                        className="px-4 font-mono text-4xl text-jordi-orange-600"
+                        className="px-4 font-mono text-4xl text-jordi-orange-500"
                         onClick={handleSelectNextDateIndex}
                       >
                         &gt;
@@ -139,8 +120,8 @@ export function Speakers() {
                       className={clsx(
                         'absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                         dayIndex === selectedIndex
-                          ? 'fill-jordi-purple-400 stroke-jordi-purple-400'
-                          : 'fill-transparent stroke-jordi-purple-200',
+                          ? 'fill-jordi-orange-400 stroke-jordi-orange dark:fill-jordi-beige-50 dark:stroke-jordi-beige-50'
+                          : 'fill-transparent stroke-jordi-orange-400',
                       )}
                     />
                     <div className="relative">
@@ -148,8 +129,8 @@ export function Speakers() {
                         className={clsx(
                           'hidden font-mono text-sm sm:flex',
                           dayIndex === selectedIndex
-                            ? 'text-jordi-purple-400'
-                            : 'text-jordi-purple-200',
+                            ? 'text-jordi-orange dark:text-jordi-beige-50'
+                            : 'text-jordi-orange-400 ',
                         )}
                       >
                         <Tab className="[&:not(:focus-visible)]:focus:outline-none">
@@ -159,7 +140,7 @@ export function Speakers() {
                       </div>
                       <time
                         dateTime={day.dateTime}
-                        className="mt-1.5 ml-5 block text-2xl font-semibold tracking-tight text-jordi-purple-200 sm:ml-0"
+                        className="mt-1.5 ml-5 block text-2xl font-semibold tracking-tight text-jordi-orange sm:ml-0"
                       >
                         {day.date}
                       </time>
@@ -183,9 +164,9 @@ export function Speakers() {
                         className={clsx(
                           'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
                           [
-                            'border-jordi-purple-300',
-                            'border-jordi-orange-600',
-                            'border-jordi-purple-200',
+                            'border-jordi-beige-700',
+                            'border-jordi-orange-500',
+                            'border-jordi-orange-200',
                           ][speakerIndex % 3],
                         )}
                       />
@@ -204,10 +185,10 @@ export function Speakers() {
                         />
                       </div>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-purple-200">
+                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-orange-400 dark:text-jordi-orange-200">
                       {speaker.name}
                     </h3>
-                    <p className="mt-1 text-base tracking-tight text-white">
+                    <p className="mt-1 text-base tracking-tight text-jordi-black dark:text-white">
                       {speaker.role}
                     </p>
                   </div>

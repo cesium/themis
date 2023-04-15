@@ -8,24 +8,6 @@ import { DiamondIcon } from '@/components/DiamondIcon'
 
 import teams from '@/data/team.json'
 
-function ImageClipPaths({ id, ...props }) {
-  return (
-    <svg aria-hidden="true" width={0} height={0} {...props}>
-      <defs>
-        <clipPath id={`${id}-0`} clipPathUnits="objectBoundingBox">
-          <path d="M0,0 h0.729 v0.129 h0.121 l-0.016,0.032 C0.815,0.198,0.843,0.243,0.885,0.243 H1 v0.757 H0.271 v-0.086 l-0.121,0.057 v-0.214 c0,-0.032,-0.026,-0.057,-0.057,-0.057 H0 V0" />
-        </clipPath>
-        <clipPath id={`${id}-1`} clipPathUnits="objectBoundingBox">
-          <path d="M1,1 H0.271 v-0.129 H0.15 l0.016,-0.032 C0.185,0.802,0.157,0.757,0.115,0.757 H0 V0 h0.729 v0.086 l0.121,-0.057 v0.214 c0,0.032,0.026,0.057,0.057,0.057 h0.093 v0.7" />
-        </clipPath>
-        <clipPath id={`${id}-2`} clipPathUnits="objectBoundingBox">
-          <path d="M1,0 H0.271 v0.129 H0.15 l0.016,0.032 C0.185,0.198,0.157,0.243,0.115,0.243 H0 v0.757 h0.729 v-0.086 l0.121,0.057 v-0.214 c0,-0.032,0.026,-0.057,0.057,-0.057 h0.093 V0" />
-        </clipPath>
-      </defs>
-    </svg>
-  )
-}
-
 export function Team() {
   let id = useId()
   let [tabOrientation, setTabOrientation] = useState('horizontal')
@@ -61,18 +43,21 @@ export function Team() {
   }, [])
 
   return (
-    <section id="team" aria-labelledby="team-title" className="py-20">
-      <ImageClipPaths id={id} />
+    <section
+      id="team"
+      aria-labelledby="team-title"
+      className="bg-gradient-to-t from-jordi-beige-100 py-20 dark:from-black"
+    >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="team-title"
-            className="font-display text-4xl font-medium tracking-tighter text-jordi-orange-600 sm:text-5xl"
+            className="font-display text-4xl font-medium tracking-tighter text-jordi-orange-500 sm:text-5xl"
           >
             Equipa
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-white">
-            A coleção mais aleatória de nerds e chatos que gostam de debater
+          <p className="mt-4 font-display text-2xl tracking-tight text-jordi-black dark:text-white">
+            Vem conhecer a equipa que organizou este fantástico evento!
           </p>
         </div>
         <Tab.Group
@@ -90,18 +75,18 @@ export function Team() {
                   {selectedIndex === index && (
                     <div className="flex w-screen items-center justify-between px-4">
                       <button
-                        className="px-4 font-mono text-4xl text-jordi-orange-600"
+                        className="px-4 font-mono text-4xl text-jordi-orange-400"
                         onClick={handleSelectPrevIndex}
                       >
                         &lt;
                       </button>
 
-                      <div className="-mt-2 text-center font-mono text-xl text-jordi-purple-300">
+                      <div className="-mt-2 text-center font-mono text-xl text-jordi-orange-300">
                         {team.name}
                       </div>
 
                       <button
-                        className="px-4 font-mono text-4xl text-jordi-orange-600"
+                        className="px-4 font-mono text-4xl text-jordi-orange-400"
                         onClick={handleSelectNextIndex}
                       >
                         &gt;
@@ -125,8 +110,8 @@ export function Team() {
                       className={clsx(
                         'absolute top-[0.5625rem] left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block',
                         index === selectedIndex
-                          ? 'fill-jordi-purple-400 stroke-jordi-purple-400'
-                          : 'fill-transparent stroke-jordi-purple-200',
+                          ? 'fill-jordi-orange stroke-jordi-orange'
+                          : 'fill-transparent stroke-jordi-orange-400 dark:stroke-jordi-beige-50',
                       )}
                     />
                     <div className="relative">
@@ -134,8 +119,8 @@ export function Team() {
                         className={clsx(
                           'hidden font-mono text-sm sm:flex',
                           index === selectedIndex
-                            ? 'text-jordi-purple-400'
-                            : 'text-jordi-purple-200',
+                            ? 'text-jordi-orange'
+                            : 'text-jordi-orange-400 dark:text-jordi-beige-50',
                         )}
                       >
                         <Tab className="[&:not(:focus-visible)]:focus:outline-none">
@@ -163,14 +148,14 @@ export function Team() {
                         className={clsx(
                           'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
                           [
-                            'border-jordi-purple-300',
+                            'border-jordi-orange-300',
                             'border-jordi-orange-600',
-                            'border-jordi-purple-200',
+                            'border-jordi-orange-200',
                           ][index % 3],
                         )}
                       />
                       <div
-                        className="absolute inset-0 bg-indigo-50"
+                        className="absolute inset-0 bg-black"
                         style={{ clipPath: `url(#${id}-${index % 3})` }}
                       >
                         <a href={`${member.social}`}>
@@ -186,10 +171,10 @@ export function Team() {
                         </a>
                       </div>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-purple-200">
+                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-jordi-orange-400 dark:text-jordi-orange-200">
                       {member.name}
                     </h3>
-                    <p className="mt-1 text-base tracking-tight text-white">
+                    <p className="mt-1 text-base tracking-tight text-jordi-black dark:text-jordi-beige">
                       {member.organization}
                     </p>
                   </div>
