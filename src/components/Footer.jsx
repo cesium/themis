@@ -6,7 +6,7 @@ import footer from '@/data/footer.json'
 export function Footer() {
   return (
     <footer className="bg-white py-16 dark:bg-jordi-black">
-      <Container className="flex flex-row items-center justify-between md:flex-row">
+      <Container className="flex flex-col gap-5 items-center justify-between md:flex-row">
         <Image
           className="h-12 w-auto text-slate-900"
           src={Logo}
