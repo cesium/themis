@@ -9,7 +9,6 @@ import { Sponsors } from '@/components/Sponsors'
 import { Organization } from '@/components/Organization'
 import { Papers } from '@/components/Paper'
 import { Team } from '@/components/Team'
-import favicon from 'public/favicon.ico'
 
 export default function Home() {
   return (
@@ -17,7 +16,7 @@ export default function Home() {
       <div className="bg-white dark:bg-jordi-black">
         <Head>
           <title>Jordi</title>
-          <link rel="icon" href={favicon} />
+          <link rel="icon" href="/favicon.ico" />
           <meta name="description" />
         </Head>
         <Header />
