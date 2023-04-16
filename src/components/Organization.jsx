@@ -5,7 +5,7 @@ import { Container } from '@/components/Container'
 import organizers from '@/data/organization.json'
 
 export function Organization() {
-  const { resolvedTheme , setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme')
