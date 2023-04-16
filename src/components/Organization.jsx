@@ -1,20 +1,20 @@
 import { useTheme } from 'next-themes'
 import { useEffect } from 'react'
-import Image from 'next/image'
 import { Container } from '@/components/Container'
 import organizers from '@/data/organization.json'
+import { current } from 'tailwindcss/colors'
+import { RenderImage } from '@/components/RenderImage'
 
 export function Organization() {
   const { resolvedTheme, setTheme } = useTheme()
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme')
+
     if (storedTheme) {
       setTheme(storedTheme)
     }
   })
-
-  const currentTheme = resolvedTheme
 
   return (
     <div className="bg-gradient-to-b from-jordi-beige-100 py-16 dark:from-black">
@@ -29,27 +29,11 @@ export function Organization() {
           {organizers.map((organization) => (
             <div key={organization.name}>
               <a href={organization.site}>
-                {currentTheme == 'dark' ? (
-                  <>
-                    <Image
-                      src={`/images/organization/${organization.logo}`}
-                      alt={organization.name}
-                      height={120}
-                      width={150}
-                    />
-                    <p className="hidden">{organization.logo}</p>
-                  </>
-                ) : (
-                  <>
-                    <Image
-                      src={`/images/organization/${organization.logo_light}`}
-                      alt={organization.name}
-                      height={120}
-                      width={150}
-                    />
-                    <p className="hidden">{organization.logo_light}</p>
-                  </>
-                )}
+                <RenderImage
+                  org={organization}
+                  currentTheme={resolvedTheme}
+                  path={'organization'}
+                />
               </a>
             </div>
           ))}

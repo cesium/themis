@@ -4,6 +4,7 @@ import { useTheme } from 'next-themes'
 import { useEffect } from 'react'
 import { Container } from '@/components/Container'
 import sponsors from '@/data/sponsors.json'
+import { RenderImage } from '@/components/RenderImage'
 
 export function Sponsors() {
   const { resolvedTheme, setTheme } = useTheme()
@@ -14,8 +15,6 @@ export function Sponsors() {
       setTheme(storedTheme)
     }
   })
-
-  const currentTheme = resolvedTheme
   return (
     <section
       id="sponsors"
@@ -33,13 +32,10 @@ export function Sponsors() {
               key={sponsor.name}
               className="flex items-center justify-center"
             >
-              <Image
-                src={`/images/logos/${
-                  currentTheme === 'dark' ? sponsor.logo : sponsor.logo_light
-                }`}
-                alt={sponsor.name}
-                height={120}
-                width={150}
+              <RenderImage
+                org={sponsor}
+                currentTheme={resolvedTheme}
+                path={'logos'}
               />
             </Link>
           ))}
