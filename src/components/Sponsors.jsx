@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
-import { useEffect } from 'react'
 import { Container } from '@/components/Container'
 import sponsors from '@/data/sponsors.json'
 import { RenderImage } from '@/components/RenderImage'
@@ -9,12 +7,6 @@ import { RenderImage } from '@/components/RenderImage'
 export function Sponsors() {
   const { resolvedTheme, setTheme } = useTheme()
 
-  useEffect(() => {
-    const storedTheme = localStorage.getItem('theme')
-    if (storedTheme) {
-      setTheme(storedTheme)
-    }
-  })
   return (
     <section
       id="sponsors"

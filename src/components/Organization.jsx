@@ -1,20 +1,10 @@
 import { useTheme } from 'next-themes'
-import { useEffect } from 'react'
 import { Container } from '@/components/Container'
 import organizers from '@/data/organization.json'
-import { current } from 'tailwindcss/colors'
 import { RenderImage } from '@/components/RenderImage'
 
 export function Organization() {
   const { resolvedTheme, setTheme } = useTheme()
-
-  useEffect(() => {
-    const storedTheme = localStorage.getItem('theme')
-
-    if (storedTheme) {
-      setTheme(storedTheme)
-    }
-  })
 
   return (
     <div className="bg-gradient-to-b from-jordi-beige-100 py-16 dark:from-black">

@@ -14,13 +14,6 @@ export function Header() {
 
   useEffect(() => setMounted(true), [])
 
-  useEffect(() => {
-    const storedTheme = localStorage.getItem('theme')
-    if (storedTheme) {
-      setTheme(storedTheme)
-    }
-  })
-
   const toggleTheme = () => {
     const newTheme = resolvedTheme === 'light' ? 'dark' : 'light'
     setTheme(newTheme)
