@@ -1,13 +1,11 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
-
 import { Container } from '@/components/Container'
 import sponsors from '@/data/sponsors.json'
+import { RenderImage } from '@/components/RenderImage'
 
 export function Sponsors() {
-  const { systemTheme, theme = 'dark' } = useTheme()
-  const currentTheme = theme === 'system' ? systemTheme : theme
+  const { resolvedTheme, setTheme } = useTheme()
 
   return (
     <section
@@ -26,15 +24,10 @@ export function Sponsors() {
               key={sponsor.name}
               className="flex items-center justify-center"
             >
-              <Image
-                src={`/images/logos/${
-                  currentTheme === 'dark'
-                    ? sponsor.logo
-                    : sponsor.logo_light ?? sponsor.logo
-                }`}
-                alt={sponsor.name}
-                height={120}
-                width={150}
+              <RenderImage
+                org={sponsor}
+                currentTheme={resolvedTheme}
+                path={'logos'}
               />
             </Link>
           ))}

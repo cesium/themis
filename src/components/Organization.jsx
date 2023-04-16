@@ -1,11 +1,10 @@
 import { useTheme } from 'next-themes'
-import Image from 'next/image'
 import { Container } from '@/components/Container'
 import organizers from '@/data/organization.json'
+import { RenderImage } from '@/components/RenderImage'
 
 export function Organization() {
-  const { systemTheme, theme = 'dark' } = useTheme()
-  const currentTheme = theme === 'system' ? systemTheme : theme
+  const { resolvedTheme, setTheme } = useTheme()
 
   return (
     <div className="bg-gradient-to-b from-jordi-beige-100 py-16 dark:from-black">
@@ -20,16 +19,10 @@ export function Organization() {
           {organizers.map((organization) => (
             <div key={organization.name}>
               <a href={organization.site}>
-                <Image
-                  className="hover:opacity-80"
-                  src={`/images/organization/${
-                    currentTheme === 'dark'
-                      ? organization.logo
-                      : organization.logo_light ?? organization.logo
-                  }`}
-                  alt={organization.name}
-                  height={80}
-                  width={125}
+                <RenderImage
+                  org={organization}
+                  currentTheme={resolvedTheme}
+                  path={'organization'}
                 />
               </a>
             </div>
