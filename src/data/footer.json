@@ -1,14 +1,17 @@
 [
   {
     "name": "Escola de Engenharia",
-    "logo": "engenharia.png"
+    "logo": "engenharia.png",
+    "link": "/"
   },
   {
     "name": "Escola de Direito",
-    "logo": "direito.jpg"
+    "logo": "direito.jpg",
+    "link": "/"
   },
   {
     "name": "Vision Legal Lab",
-    "logo": "vision.png"
+    "logo": "vision.png",
+    "link": "https://www.instagram.com/visionlegal.lab/"
   }
 ]

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import { useEffect } from 'react'
 import { Container } from '@/components/Container'
@@ -27,7 +28,8 @@ export function Sponsors() {
         </h2>
         <div className="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-y-12 gap-x-32 md:gap-x-16 lg:gap-x-32">
           {sponsors.map((sponsor) => (
-            <div
+            <Link
+              href={sponsor.link}
               key={sponsor.name}
               className="flex items-center justify-center"
             >
@@ -39,7 +41,7 @@ export function Sponsors() {
                 height={120}
                 width={150}
               />
-            </div>
+            </Link>
           ))}
         </div>
       </Container>
