@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react'
 import { MoonIcon, SunIcon } from '@heroicons/react/outline'
 
 export function Header() {
-  const { systemTheme, theme = 'light', setTheme } = useTheme()
+  const { resolvedTheme , setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => setMounted(true), [])
@@ -22,14 +22,14 @@ export function Header() {
   })
 
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light'
+    const newTheme = resolvedTheme === 'light' ? 'dark' : 'light'
     setTheme(newTheme)
     localStorage.setItem('theme', newTheme)
   }
 
   const renderThemeChanger = () => {
     if (!mounted) return null
-    const currentTheme = theme === 'system' ? systemTheme : theme
+    const currentTheme = resolvedTheme
 
     return currentTheme === 'dark' ? (
       <SunIcon

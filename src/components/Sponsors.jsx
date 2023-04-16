@@ -5,7 +5,7 @@ import { Container } from '@/components/Container'
 import sponsors from '@/data/sponsors.json'
 
 export function Sponsors() {
-  const { systemTheme, theme = 'light', setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme')
@@ -14,7 +14,7 @@ export function Sponsors() {
     }
   })
 
-  const currentTheme = theme === 'system' ? systemTheme : theme
+  const currentTheme = resolvedTheme
   return (
     <section
       id="sponsors"

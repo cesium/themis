@@ -5,7 +5,7 @@ import { Container } from '@/components/Container'
 import organizers from '@/data/organization.json'
 
 export function Organization() {
-  const { systemTheme, theme = 'light', setTheme } = useTheme()
+  const { resolvedTheme , setTheme } = useTheme()
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme')
@@ -14,7 +14,7 @@ export function Organization() {
     }
   })
 
-  const currentTheme = theme
+  const currentTheme = resolvedTheme
 
   return (
     <div className="bg-gradient-to-b from-jordi-beige-100 py-16 dark:from-black">
