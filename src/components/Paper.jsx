@@ -21,7 +21,7 @@ function ArrowRightIcon(props) {
   )
 }
 
-export function Papers() {
+export function Papers({ showWinners }) {
   return (
     <section
       id="papers"
@@ -50,25 +50,27 @@ export function Papers() {
               </p>
             </div>
             <div className="flex flex-col items-center gap-10">
-              <form>
-                <h3 className="inline-block text-lg font-semibold tracking-tight text-jordi-orange-500 sm:block">
-                  Veja os vencedores{' '}
-                  <span className="hidden sm:inline-flex" aria-hidden="true">
-                    &darr;
-                  </span>
-                </h3>
-                <Button
-                  type="submit"
-                  className="ml-5 mt-2 bg-jordi-orange-500 text-white sm:ml-24"
-                  href="/papers"
-                >
-                  <span className="sr-only sm:not-sr-only">Vencedores</span>
-                  <span className="sm:hidden">
-                    <ArrowRightIcon className="h-6 w-6" />
-                  </span>
-                </Button>
-              </form>
-              <div className="mt-16 flex flex-col">
+              {showWinners && (
+                <form>
+                  <h3 className="inline-block text-lg font-semibold tracking-tight text-jordi-orange-500 sm:block">
+                    Veja os vencedores{' '}
+                    <span className="hidden sm:inline-flex" aria-hidden="true">
+                      &darr;
+                    </span>
+                  </h3>
+                  <Button
+                    type="submit"
+                    className="ml-5 mt-2 bg-jordi-orange-500 text-white sm:ml-24"
+                    href="/papers"
+                  >
+                    <span className="sr-only sm:not-sr-only">Vencedores</span>
+                    <span className="sm:hidden">
+                      <ArrowRightIcon className="h-6 w-6" />
+                    </span>
+                  </Button>
+                </form>
+              )}
+              <div className={`${showWinners && 'mt-16'} flex flex-col`}>
                 <h1 className="text-base font-semibold tracking-tighter text-jordi-black dark:text-jordi-beige-900">
                   Mais informações{' '}
                   <span className="hidden sm:inline-flex" aria-hidden="true">
