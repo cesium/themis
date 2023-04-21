@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { DiamondIcon } from '@/components/DiamondIcon'
 import backgroundImage from 'public/images/logoOrange.png'
 
 function ArrowRightIcon(props) {
