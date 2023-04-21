@@ -24,7 +24,7 @@ export default function Home() {
           <Hero />
           <Speakers />
           <Schedule />
-          <Papers showWinners={false} />
+          <Papers showWinners={true} />
           <Team />
           <Sponsors />
           <Organization />

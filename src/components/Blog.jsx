@@ -6,12 +6,22 @@ import React, { useState } from 'react'
 import backgroundImage from 'public/images/themis.svg'
 import writers from '@/data/blog.json'
 
-function ShowPaper({ paper }) {
-  const [open, setOpen] = useState(false)
+function ArrowRightIcon(props) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" {...props}>
+      <path
+        d="m14 7 5 5-5 5M19 12H5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
 
-  const handleToggle = () => {
-    setOpen(!open)
-  }
+function ShowPaper({ paper }) {
 
   return (
     <div className="mb-6 space-y-8 rounded-2xl bg-jordi-beige/60 py-14 px-10 text-start shadow-xl shadow-black/5 backdrop-blur dark:bg-black/60">
@@ -23,24 +33,15 @@ function ShowPaper({ paper }) {
       </p>
       <p className="mt-1 tracking-tight text-jordi-orange-400">{paper.title}</p>
       <p
-        className={`text-base ${
-          open ? 'text-jordi-black dark:text-jordi-beige' : 'hidden'
-        }`}
-      >
-        {paper.text}
-      </p>
-      <p
-        className={`text-base ${
-          open ? 'hidden' : 'text-jordi-black/70 dark:text-jordi-beige/70'
-        }`}
+        className={'text-base text-jordi-black/70 dark:text-jordi-beige/70'}
       >
         {paper.summary}
       </p>
       <Button
         className="mx-auto bg-jordi-orange-500 text-white"
-        onClick={handleToggle}
+        href={paper.link}
       >
-        {open ? 'Mostrar menos' : 'Mostrar mais'}
+        Ver o paper
       </Button>
     </div>
   )
